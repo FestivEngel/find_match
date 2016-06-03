@@ -1,1 +1,3 @@
 # find_match
+
+Dating engine based on socionics. Detailed description in doc/TZ_...
