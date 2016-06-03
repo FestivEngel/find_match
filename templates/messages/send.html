@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>FindMatch - Send a message</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function toggleDisplay(el) {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+
+    <style type="text/css">
+        html {
+            background: #999;
+        }
+
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        a img {
+            border: none;
+        }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover {
+            color: #fff;
+        }
+
+        #previewToolbar a.active {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br />
+
+        {% if loggedIn %}
+        {% include 'includes/submenu.html' %}
+        {% endif %}
+        <br />
+
+        <h1>{% trans "Send a message" %}</h1>
+
+        <table id="messagesTable">
+            {% for message in messages %}
+            <tr>
+                <td>{% trans "From" %}:</td>
+                <td>{{ message.senderName }}</td>
+            </tr>
+            <tr>
+                <td>{% trans "To" %}:</td>
+                <td>{{ message.receiverName }}</td>
+            </tr>
+            <tr>
+                <td>{% trans "Subject" %}:</td>
+                <td>{{ message.subject }}</td>
+            </tr>
+            <tr>
+                <td>{% trans "Body" %}:</td>
+                <td>{{ message.body }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr/>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <form action="javascript:void(null)" method="post" id="sendMessageForm"
+              onsubmit="return messagesSendSendData();">
+            <input type="hidden" id="anotherUserId" name="anotherUserId" value="{{ anotherUserId }}">
+            <input type="hidden" id="senderName" value="{{ senderName }}">
+            <input type="hidden" id="receiverName" value="{{ receiverName }}">
+            <input type="hidden" name="command" value="sendMessage">
+
+            <p>{% trans "To" %}: {{ anotherUserName }}<br/></p>
+
+            <p>
+
+            <div id="subjectError" style="color: red; display: none">
+                {% trans "Error: Empty subject!" %}
+            </div>
+            </p>
+            {% trans "Subject" %}: <input type="text" id="subject" name="subject"></p>
+
+            <p>
+
+            <div id="bodyError" style="color: red; display: none">{% trans "Error: Empty message!" %}</div>
+            </p>
+            <p><textarea rows="4" cols="40" id="body" name="body"></textarea></p>
+
+            <p><input type="submit" value={% trans "Send" %}></p>
+        </form>
+
+    </div>
+    <div class="break"></div>
+</div>
+</body>
+<script src="/js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        setInterval(function () {
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: '/ajax/msgs',
+                data: {
+                    command: 'loadNewMessages',
+                    anotherUserId: $('#anotherUserId').val()
+                },
+                success: function (result) {
+                    if (result.status) {
+                        for (var i = 0; i < result.newCount; i++) {
+                            var row = getRow(result.messages[i].senderName,
+                                    result.messages[i].receiverName,
+                                    result.messages[i].subject,
+                                    result.messages[i].body);
+                            $('#messagesTable').append(row);
+                        }
+                    }
+                },
+                error: function (xhr, str) {
+                    // Error: xhr.responseCode
+                }
+            });
+        }, 10 * 1000);
+    });
+
+    $('#subject').on('input', function () {
+        messagesSendRemoveErrorNotification('subjectError');
+    });
+
+    $('#body').on('input', function () {
+        messagesSendRemoveErrorNotification('bodyError');
+    });
+
+    function getRow(from, to, subject, body) {
+        return ''.concat('<tr><td>')
+                .concat('From:</td><td>')
+                .concat(from)
+                .concat('</td></tr><tr><td>To:</td><td>')
+                .concat(to)
+                .concat('</td></tr><tr><td>Subject:</td><td>')
+                .concat(subject)
+                .concat('</td></tr><tr><td>Body:</td><td>')
+                .concat(body)
+                .concat('</td></tr><tr><td colspan="2"><hr /></td></tr>');
+    }
+</script>
+</html>

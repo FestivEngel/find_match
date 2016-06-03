@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>FindMatch - Test</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function toggleDisplay(el) {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+    </script>
+    {% if not testUnreg %}
+    <script>
+        jQuery(document).ready(function ($) {
+            if (window.history && window.history.pushState) {
+                window.history.pushState('forward', null, '/test');
+                $(window).on('popstate', function () {
+                    $(location).attr('href', '/instructions');
+                });
+
+            }
+        });
+    </script>
+    {% else %}
+    <script>
+        jQuery(document).ready(function ($) {
+            if (window.history && window.history.pushState) {
+                window.history.pushState('forward', null, '/segyhkahgccv9xm/test');
+                $(window).on('popstate', function () {
+                    $(location).attr('href', '/segyhkahgccv9xm/instructions');
+                });
+
+            }
+        });
+    </script>
+    {% endif %}
+    <script>
+        var startSec = 0;
+        var currentQuestion = 0;
+        var answers = [];
+
+        function init() {
+            setRetakeTimer();
+            $('#currentQuestionIndicator').html(currentQuestion + 1);
+        }
+
+        function setRetakeTimer() {
+            var retakeTimeout = $('#retakeTimeoutSec').val();
+            setTimeout(setRetake, retakeTimeout * 1000);
+            var d = new Date();
+            startSec = d.getTime() / 1000;
+        }
+
+        function setRetake() {
+            $('#needRetakeFlag').val(1);
+        }
+
+        function finalize() {
+            setSpentTime();
+            answers = JSON.stringify(answers);
+            $('#answers').val(answers);
+        }
+
+        function setSpentTime() {
+            var d = new Date();
+            var diffSec = d.getTime() / 1000 - startSec;
+            $('#spentTimeSec').val(Math.round(diffSec));
+        }
+
+        function setAnswer(answer) {
+            answers[currentQuestion] = answer;
+            if (currentQuestion != 73) {
+                var currentIndex = currentQuestion + 1;
+                var nextIndex = currentIndex + 1;
+                currentQuestion++;
+                $('#currentQuestionIndicator').html(currentQuestion + 1);
+                $('#'.concat('question'.concat(currentIndex))).css({'display': 'none'});
+                $('#'.concat('question'.concat(nextIndex))).css({'display': 'block'});
+		$('#'.concat('no'.concat(nextIndex))).focus();
+            }
+        }
+    </script>
+    <style type="text/css">
+        html {
+            background: #999;
+        }
+
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        a img {
+            border: none;
+        }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover {
+            color: #fff;
+        }
+
+        #previewToolbar a.active {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body onload="init()">
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br />
+        <br />
+
+        <h1>{% trans "Test" %}</h1>
+
+        <p>{% trans "Question" %} <span id="currentQuestionIndicator"></span>/74</p>
+
+        <div id="question1" style="display: block">
+            <p>{% trans "EI_question_1" %}</p>
+            <button onclick="setAnswer(0)" autofocus>{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question2" style="display: none">
+            <p>{% trans "EI_question_2" %}</p>
+            <button id="no2" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question3" style="display: none">
+            <p>{% trans "EI_question_3" %}</p>
+            <button id="no3" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question4" style="display: none">
+            <p>{% trans "EI_question_4" %}</p>
+            <button id="no4" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question5" style="display: none">
+            <p>{% trans "EI_question_5" %}</p>
+            <button id="no5" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question6" style="display: none">
+            <p>{% trans "EI_question_6" %}</p>
+            <button id="no6" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question7" style="display: none">
+            <p>{% trans "EI_question_7" %}</p>
+            <button id="no7" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question8" style="display: none">
+            <p>{% trans "EI_question_8" %}</p>
+            <button id="no8" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question9" style="display: none">
+            <p>{% trans "EI_question_9" %}</p>
+            <button id="no9" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question10" style="display: none">
+            <p>{% trans "EI_question_10" %}</p>
+            <button id="no10" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question11" style="display: none">
+            <p>{% trans "EI_question_11" %}</p>
+            <button id="no11" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question12" style="display: none">
+            <p>{% trans "EI_question_12" %}</p>
+            <button id="no12" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question13" style="display: none">
+            <p>{% trans "EI_question_13" %}</p>
+            <button id="no13" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question14" style="display: none">
+            <p>{% trans "EI_question_14" %}</p>
+            <button id="no14" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question15" style="display: none">
+            <p>{% trans "EI_question_15" %}</p>
+            <button id="no15" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question16" style="display: none">
+            <p>{% trans "EI_question_16" %}</p>
+            <button id="no16" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question17" style="display: none">
+            <p>{% trans "EI_question_17" %}</p>
+            <button id="no17" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question18" style="display: none">
+            <p>{% trans "EI_question_18" %}</p>
+            <button id="no18" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question19" style="display: none">
+            <p>{% trans "EI_question_19" %}</p>
+            <button id="no19" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question20" style="display: none">
+            <p>{% trans "SN_question_1" %}</p>
+            <button id="no20" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question21" style="display: none">
+            <p>{% trans "SN_question_2" %}</p>
+            <button id="no21" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question22" style="display: none">
+            <p>{% trans "SN_question_3" %}</p>
+            <button id="no22" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question23" style="display: none">
+            <p>{% trans "SN_question_4" %}</p>
+            <button id="no23" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question24" style="display: none">
+            <p>{% trans "SN_question_5" %}</p>
+            <button id="no24" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question25" style="display: none">
+            <p>{% trans "SN_question_6" %}</p>
+            <button id="no25" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question26" style="display: none">
+            <p>{% trans "SN_question_7" %}</p>
+            <button id="no26" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question27" style="display: none">
+            <p>{% trans "SN_question_8" %}</p>
+            <button id="no27" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question28" style="display: none">
+            <p>{% trans "SN_question_9" %}</p>
+            <button id="no28" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question29" style="display: none">
+            <p>{% trans "SN_question_10" %}</p>
+            <button id="no29" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question30" style="display: none">
+            <p>{% trans "SN_question_11" %}</p>
+            <button id="no30" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question31" style="display: none">
+            <p>{% trans "SN_question_12" %}</p>
+            <button id="no31" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question32" style="display: none">
+            <p>{% trans "SN_question_13" %}</p>
+            <button id="no32" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question33" style="display: none">
+            <p>{% trans "SN_question_14" %}</p>
+            <button id="no33" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question34" style="display: none">
+            <p>{% trans "SN_question_15" %}</p>
+            <button id="no34" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question35" style="display: none">
+            <p>{% trans "SN_question_16" %}</p>
+            <button id="no35" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question36" style="display: none">
+            <p>{% trans "SN_question_17" %}</p>
+            <button id="no36" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question37" style="display: none">
+            <p>{% trans "SN_question_18" %}</p>
+            <button id="no37" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question38" style="display: none">
+            <p>{% trans "SN_question_19" %}</p>
+            <button id="no38" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question39" style="display: none">
+            <p>{% trans "SN_question_20" %}</p>
+            <button id="no39" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question40" style="display: none">
+            <p>{% trans "TF_question_1" %}</p>
+            <button id="no40" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question41" style="display: none">
+            <p>{% trans "TF_question_2" %}</p>
+            <button id="no41" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question42" style="display: none">
+            <p>{% trans "TF_question_3" %}</p>
+            <button id="no42" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question43" style="display: none">
+            <p>{% trans "TF_question_4" %}</p>
+            <button id="no43" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question44" style="display: none">
+            <p>{% trans "TF_question_5" %}</p>
+            <button id="no44" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question45" style="display: none">
+            <p>{% trans "TF_question_6" %}</p>
+            <button id="no45" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question46" style="display: none">
+            <p>{% trans "TF_question_7" %}</p>
+            <button id="no46" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question47" style="display: none">
+            <p>{% trans "TF_question_8" %}</p>
+            <button id="no47" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question48" style="display: none">
+            <p>{% trans "TF_question_9" %}</p>
+            <button id="no48" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question49" style="display: none">
+            <p>{% trans "TF_question_10" %}</p>
+            <button id="no49" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question50" style="display: none">
+            <p>{% trans "TF_question_11" %}</p>
+            <button id="no50" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question51" style="display: none">
+            <p>{% trans "TF_question_12" %}</p>
+            <button id="no51" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question52" style="display: none">
+            <p>{% trans "TF_question_13" %}</p>
+            <button id="no52" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question53" style="display: none">
+            <p>{% trans "TF_question_14" %}</p>
+            <button id="no53" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question54" style="display: none">
+            <p>{% trans "TF_question_15" %}</p>
+            <button id="no54" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question55" style="display: none">
+            <p>{% trans "TF_question_16" %}</p>
+            <button id="no55" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question56" style="display: none">
+            <p>{% trans "TF_question_17" %}</p>
+            <button id="no56" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question57" style="display: none">
+            <p>{% trans "JP_question_1" %}</p>
+            <button id="no57" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question58" style="display: none">
+            <p>{% trans "JP_question_2" %}</p>
+            <button id="no58" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question59" style="display: none">
+            <p>{% trans "JP_question_3" %}</p>
+            <button id="no59" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question60" style="display: none">
+            <p>{% trans "JP_question_4" %}</p>
+            <button id="no60" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question61" style="display: none">
+            <p>{% trans "JP_question_5" %}</p>
+            <button id="no61" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question62" style="display: none">
+            <p>{% trans "JP_question_6" %}</p>
+            <button id="no62" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question63" style="display: none">
+            <p>{% trans "JP_question_7" %}</p>
+            <button id="no63" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question64" style="display: none">
+            <p>{% trans "JP_question_8" %}</p>
+            <button id="no64" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question65" style="display: none">
+            <p>{% trans "JP_question_9" %}</p>
+            <button id="no65" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question66" style="display: none">
+            <p>{% trans "JP_question_10" %}</p>
+            <button id="no66" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question67" style="display: none">
+            <p>{% trans "JP_question_11" %}</p>
+            <button id="no67" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question68" style="display: none">
+            <p>{% trans "JP_question_12" %}</p>
+            <button id="no68" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question69" style="display: none">
+            <p>{% trans "JP_question_13" %}</p>
+            <button id="no69" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question70" style="display: none">
+            <p>{% trans "JP_question_14" %}</p>
+            <button id="no70" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question71" style="display: none">
+            <p>{% trans "JP_question_15" %}</p>
+            <button id="no71" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question72" style="display: none">
+            <p>{% trans "JP_question_16" %}</p>
+            <button id="no72" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        <div id="question73" style="display: none">
+            <p>{% trans "JP_question_17" %}</p>
+            <button id="no73" onclick="setAnswer(0)">{% trans "No" %}</button>
+            <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+        </div>
+
+        {% if testUnreg %}
+        <form action="/segyhkahgccv9xm/results" method="post" onsubmit="finalize()">
+        {% else %}
+        <form action="/results" method="post" onsubmit="finalize()">
+        {% endif %}
+            <input type="hidden" id="spentTimeSec" name="spentTimeSec" value="0">
+            <input type="hidden" id="retakeTimeoutSec" name="retakeTimeoutSec" value="{{ retakeTimeoutSec }}">
+            <input type="hidden" id="needRetakeFlag" name="needRetake" value="0">
+            <input type="hidden" id="currentQuestion" name="currentQuestion" value="1">
+            <input type="hidden" id="answers" name="answers" value="">
+
+            <div id="question74" style="display: none">
+                <p>{% trans "JP_question_18" %}</p>
+
+                <button id="no74" onclick="setAnswer(0)">{% trans "No" %}</button>
+                <button onclick="setAnswer(1)">{% trans "Yes" %}</button>
+            </div>
+        </form>
+    </div>
+    <div class="break"></div>
+</div>
+</body>
+<script src="/js/main.js"></script>
+</html>

@@ -1,0 +1,14 @@
+{% if not landingMode %}
+<table>
+    <tr>
+        <td style="text-align:right;"><a href="/profile">{% trans "Profile" %}</a></td>
+        <td style="text-align:right;"><a href="/messages">{% trans "Messages" %}</a>
+            {% if showNewMessages %}
+            [ New: <span id="newMessagesCount">{{ newMessagesCount }}</span>]
+            {% endif %}
+        </td>
+        <td style="text-align:right;"><a href="/saved">{% trans "Search" %}</a></td>
+        <td style="text-align:right;"><a href="/analytics">{% trans "Analytics" %}</a></td>
+    </tr>
+</table>
+{% endif %}

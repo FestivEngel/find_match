@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FindMatch - Run</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function toggleDisplay(el)
+        {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+    <style type="text/css">
+        html { background: #999; }
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 { font-size: 24px; }
+        h2 { font-size: 20px; }
+        h3 { font-size: 16px; }
+        h4 { font-size: 14px; }
+        h5 { font-size: 12px; }
+        h6 { font-size: 12px; font-style: italic;}
+
+
+        .break {
+            clear: both;
+        }
+
+        a img { border: none; }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover { color: #fff; }
+        #previewToolbar a.active { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br />
+
+        {% if loggedIn %}
+        {% include 'includes/submenu.html' %}
+        {% endif %}
+        <br />
+
+        <h1>{% trans "Search" %}</h1>
+
+        {% if loggedIn %}
+        {% if not saved %}
+        <table id="searchUpdated" style="color: blue; display: none">
+            <tr>
+                <td>{% trans "Success: Your search was updated!" %}</td>
+            </tr>
+        </table>
+
+        <form action="javascript:void(null)" method="post" id="editForm">
+            <input type="hidden" id="command" name="command" value="setSaved">
+            <input type="hidden" name="searchId" value="{{ searchId }}">
+        <table id="saveSearch" style="display: none;">
+            <tr id="nameError" style="color: red; display: none">
+                <td colspan="2">{% trans "Error: Enter the name!" %}</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Name" %}:</strong></td>
+                <td><input type="text" id="name" name="name" value="{{ searchName }}"></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Notifications" %}:</strong></td>
+                <td>
+                    <select name="alerts">
+                        <option value="1"{% if savedSearch.alerts == 1 %} selected{% endif %}>{% trans "Never" %}</option>
+                        <option value="2"{% if savedSearch.alerts == 2 %} selected{% endif %}>{% trans "Daily" %}</option>
+                        <option value="3"{% if savedSearch.alerts == 3 %} selected{% endif %}>{% trans "Weekly" %}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="{% trans "Save" %}">
+                </td>
+            </tr>
+        </table>
+        <table id="saveRedefineSearch" style="display: block;">
+            <tr>
+                <td><a href="#" id="saveSearchLink">{% trans "Save search" %}</a></td>
+                <td><a href="/edit/{{ searchId }}">{% trans "Refine" %}</a></td>
+            </tr>
+        </table>
+        </form>
+        {% endif %}
+
+        {% if not paid %}
+        <p style="text-align:right;"><a href="/purchase">{% trans "Subscribe" %}</a> {% trans "to send a message" %}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if foundMembers|length > 0 %}
+        {% if loggedIn %}
+        <form id="runForm" action="/profile">
+        {% else %}
+        <form action="{{ registerLink }}" method="post">
+        {% endif %}
+        {% for foundMembers4 in foundMembers %}
+        <table>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                {% if loggedIn %}
+                <td><a href="/profile/view/{{ foundMember.id }}">
+                    {% if foundMember.hasPhoto %}
+                    <img src="/photos/thumb_{{ foundMember.photoFileName }}">
+                    {% else %}
+                    <img src="/images/no_photo.gif">
+                    {% endif %}
+                </a></td>
+                {% else %}
+                <td><a href="{{ registerLink }}">
+                    {% if foundMember.hasPhoto %}
+                    <img src="/photos/thumb_{{ foundMember.photoFileName }}">
+                    {% else %}
+                    <img src="/images/no_photo.gif">
+                    {% endif %}
+                </a></td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% if loggedIn %}
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td>{% trans "Relations" %}: {{ foundMember.relations }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                {% if paid or foundMember.mutualLike %}
+                <td><input type="submit" class="sendAMessage" value={% trans "Send a message" %} data-id="{{ foundMember.id }}"></td>
+                {% else %}
+                <td><a href="/purchase">{% trans "Purchase membership" %}</a></td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td><input type="submit" class="reportAbuse" value="{% trans "Report abuse" %}" data-id="{{ foundMember.id }}"></td>
+                {% endfor %}
+            </tr>
+            {% endif %}
+            {% if loggedIn %}
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td>
+                    <input type="submit" class="add2Favorites" value="{% trans "Add to favorites" %}" data-id="{{ foundMember.id }}"{% if foundMember.inFavorites %} disabled{% endif %}>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                {% if foundMember.viewed %}
+                <td id="uv{{ foundMember.id }}"><input type="submit" class="markAsUnviewed" value="{% trans "Mark as unviewed" %}" data-id="{{ foundMember.id }}"></td>
+                <td id="v{{ foundMember.id }}" style="display: none"><input type="submit" class="markAsViewed" value="{% trans "Mark as viewed" %}" data-id="{{ foundMember.id }}"></td>
+                {% else %}
+                <td id="uv{{ foundMember.id }}" style="display: none"><input type="submit" class="markAsUnviewed" value="{% trans "Mark as unviewed" %}" data-id="{{ foundMember.id }}"></td>
+                <td id="v{{ foundMember.id }}"><input type="submit" class="markAsViewed" value="{% trans "Mark as viewed" %}" data-id="{{ foundMember.id }}"></td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endif %}
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td>{% trans "Code" %}: {{ foundMember.code }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td>{% trans "Nick" %}: {{ foundMember.nickname }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td>{% trans "Age" %}: {{ foundMember.age }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for foundMember in foundMembers4 %}
+                <td>{% trans "Living" %}: {{ foundMember.cityName }}, {{ foundMember.countryName }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+        <br />
+        {% endfor %}
+        </form>
+        {% endif %}
+    </div>
+    <div class="break"></div>
+</div>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/run.js"></script>
+</html>

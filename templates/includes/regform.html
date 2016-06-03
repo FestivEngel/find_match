@@ -1,0 +1,106 @@
+<form action="/register" method="post" id="registerForm" onsubmit="return landingIndexCheckForm();">
+    <input type="hidden" name="formToken" value="{{ formToken }}">
+    {% if haveInviteToken %}
+    <input type="hidden" name="inviteToken" value="{{ inviteToken }}">
+    {% endif %}
+    <input type="hidden" id="veryStrongPassword" value="{% trans "very strong" %}">
+    <input type="hidden" id="strongPassword" value="{% trans "strong" %}">
+    <input type="hidden" id="goodPassword" value="{% trans "good" %}">
+    <input type="hidden" id="averagePassword" value="{% trans "average_2" %}">
+    <input type="hidden" id="weakPassword" value="{% trans "weak" %}">
+    <input type="hidden" id="veryWeakPassword" value="{% trans "very weak" %}">
+    <table>
+        <tr id="nicknameError" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: Username cannot be blank!" %}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Your name is" %}</td>
+            <td><input type="text" name="nickname" id="nickname"></td>
+        </tr>
+        <tr>
+            <td>{% trans "You are" %}</td>
+            <td>
+                <select name="gender">
+                    <option value="1">{% trans "Male" %}</option>
+                    <option value="2">{% trans "Female" %}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>{% trans "You were born on" %}</td>
+            <td><select name="bMonth">
+                <option value="1">{% trans "Jan" %}</option>
+                <option value="2">{% trans "Feb" %}</option>
+                <option value="3">{% trans "Mar" %}</option>
+                <option value="4">{% trans "Apr" %}</option>
+                <option value="5">{% trans "May" %}</option>
+                <option value="6">{% trans "Jun" %}</option>
+                <option value="7">{% trans "Jul" %}</option>
+                <option value="8">{% trans "Aug" %}</option>
+                <option value="9">{% trans "Sep" %}</option>
+                <option value="10">{% trans "Oct" %}</option>
+                <option value="11">{% trans "Nov" %}</option>
+                <option value="12">{% trans "Dec" %}</option>
+            </select>
+                <select name="bDay">
+                    {% for i in 1..31 %}
+                    <option value="{{i}}">{{i}}</option>
+                    {% endfor %}
+                </select>
+                <br/>
+                <select name="bYear"><br/>
+                    {% set year1 = date() | date("Y") - 70 %}
+                    {% set year2 = date() | date("Y") - 18 %}
+                    {% for i in year2..year1 %}
+                    <option value="{{ i }}"{% if i == year2 %} selected{% endif %}>{{ i }}</option>
+                    {% endfor %}
+                </select></td>
+        </tr>
+        <tr id="emailError" style="color: red; display: none">
+            <td colspan="2">{%trans "Error: Email is not valid!" %}</td>
+        </tr>
+        <tr id="emailExistsError" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: An account with this email address is already registered!" %}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Your email address" %}</td>
+            <td><input type="text" name="email" id="email">
+            </td>
+        </tr>
+        <tr id="passwordError1" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: password must contain at least 3 characters!" %}</td>
+        </tr>
+        <tr id="passwordError2" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: password must be different from username!" %}</td>
+        </tr>
+        <tr id="passwordError3" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: password must contain at least one number (0-9)!" %}</td>
+        </tr>
+        <tr id="passwordError4" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: password must contain at least one lowercase letter (a-z)!" %}</td>
+        </tr>
+        <tr id="passwordError5" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: password must contain at least one uppercase letter (A-Z)!" %}</td>
+        </tr>
+        <tr id="passwordError6" style="color: red; display: none">
+            <td colspan="2">{% trans "Error: please check that you've entered and confirmed your password!" %}
+            </td>
+        </tr>
+        <tr>
+            <td>{% trans "Account password" %}</td>
+            <td>
+                <input type="password" name="password" id="password">
+                <span id="strength_human">{% trans "very weak" %}</span>
+                (<span id="strength_score">0</span>)
+            </td>
+        </tr>
+        <tr>
+            <td>{% trans "Confirm password" %}</td>
+            <td>
+                <input type="password" id="password2">
+            </td>
+        </tr>
+    </table>
+
+    <p><input type="submit" name="register" value="{% trans "Register" %}"></p>
+</form>

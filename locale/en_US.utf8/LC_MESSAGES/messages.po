@@ -1,0 +1,2068 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"
+
+msgid "any"
+msgstr "any"
+
+msgid "any_2"
+msgstr "any"
+
+msgid "any_3"
+msgstr "any"
+
+msgid "any_4"
+msgstr "any"
+
+msgid "any_5"
+msgstr "any"
+
+msgid "other"
+msgstr "other"
+
+msgid "other_2"
+msgstr "other"
+
+msgid "other_3"
+msgstr "other"
+
+msgid "Other_3"
+msgstr "Other"
+
+msgid "other_4"
+msgstr "other"
+
+msgid "average_2"
+msgstr "average"
+
+#
+# Questions E I
+#
+msgid "EI_question_1"
+msgstr "You tend to say first and then think, you do not know in advance what you are going to say. Often you judge yourself because of that, saying \"will I ever learn to keep my mouth shut?\""
+
+msgid "EI_question_2"
+msgstr "You know a lot of people and think of many of them as your close friends. The more people you interact with the better you feel yourself."
+
+msgid "EI_question_3"
+msgstr "You do not have anything against reading or talking to somebody while the TV or radio is working, most likely you do not pay attention to that."
+
+msgid "EI_question_4"
+msgstr "With pleasure you interrupt yourself in the middle of doing something for a phone call, you pick up the phone immediately and enter somebody's office as soon as you need to say something."
+
+msgid "EI_question_5"
+msgstr "With pleasure you attend meetings, always desiring to share your opinion. You may be disappointed if you are not able to express your point of view."
+
+msgid "EI_question_6"
+msgstr "You prefer to share your ideas with others. When alone for a long time you feel like you are missing something."
+
+msgid "EI_question_7"
+msgstr "You find that listening is more difficult than talking, you like to be the center of attention and if you can't take part in a conversation, you feel bored."
+
+msgid "EI_question_8"
+msgstr "You make things easier by thinking out loud: \"I lost my glasses. Has anybody seen my glasses? They were here a minute ago.\" When you lose your train of thought, you help yourself remember using words \"What was I saying? Something about this morning's meeting. Ah yes, about what N. was saying.\""
+
+msgid "EI_question_9"
+msgstr "You need others to tell you how they think you present yourself, what you do, look like etc. Perhaps you know that things are OK however you need this confirmation to fully believe this."
+
+msgid "EI_question_10"
+msgstr "You think ahead about what you are going to say and want others to do the same. Often you reply: \"I need to think about that\" or \"Let me give you the answer later\""
+
+msgid "EI_question_11"
+msgstr "You like to be on your own, feel like others encroach on your personal time, therefore you can concentrate well enough to isolate yourself from conversations and phone calls."
+
+msgid "EI_question_12"
+msgstr "Others think you are a good listener, but you feel that they often abuse that."
+
+msgid "EI_question_13"
+msgstr "Others think you are shy, reserved to yourself and pensive."
+
+msgid "EI_question_14"
+msgstr "You prefer to spend time with just one or a few close friends."
+
+msgid "EI_question_15"
+msgstr "You wish you could be more persistent when offering your good ideas. You are offended when somebody says something you were just going to say yourself."
+
+msgid "EI_question_16"
+msgstr "You do not like to be interrupted, especially when talking about your thoughts and feelings. You don't interrupt others hoping they will treat you the same when it will be your turn to speak."
+
+msgid "EI_question_17"
+msgstr "You often need to be alone and recharge after a meeting or a phone call or being in public. The tenser this conversation was, the more devastated you may feel after."
+
+msgid "EI_question_18"
+msgstr "You parents used to encourage you to go outside and to play with your friends. Very likely, they were worried that you like to be alone."
+
+msgid "EI_question_19"
+msgstr "Idle talk is not for you. You treat people who are generous for compliments with caution, you do not like when they repeat what has already been said by somebody else. You think it is stupid as they do not say anything new."
+
+#
+# Quetions S N
+#
+msgid "SN_question_1"
+msgstr "You expect exact answers on exact questions. When you ask somebody \"What time is it?\", you want the answer \"Three fifty two\" and will be mad if the answer is \"around four\" or \"time to go\"."
+
+msgid "SN_question_2"
+msgstr "You concentrate on things you do right now, not thinking about what is next. Most likely you will be doing something rather than thinking about that."
+
+msgid "SN_question_3"
+msgstr "You prefer work that gives tangible results In spite of hating to do work around the house, you prefer to get things organized in your workplace instead of thinking about the future of your career."
+
+msgid "SN_question_4"
+msgstr "You are satisfied with what already exists and do not understand why some people strive to improve things all the time."
+
+msgid "SN_question_5"
+msgstr "You like to deal with facts and numbers instead of ideas and theories. You like it when things are explained step by step and consistently."
+
+msgid "SN_question_6"
+msgstr "You do not understand those who dream and fantasize a lot."
+
+msgid "SN_question_7"
+msgstr "You read magazines and reports from the beginning to the end and do not understand those who take a look at them only when they decide they need to."
+
+msgid "SN_question_8"
+msgstr "You like to be given clear instructions instead of something like: \"This is the general l plan, we will discuss the details later\". It's even worse for you when somebody thinks of instructions which clear to you as vague."
+
+msgid "SN_question_9"
+msgstr "You prefer details over the big picture. At work you concentrate on your task or on the department's task without worrying if this task fits the overall work of the company."
+
+msgid "SN_question_10"
+msgstr "You believe that a picture says a thousand words. If somebody says that your mail has arrived, you do not believe it until it is on your desk."
+
+msgid "SN_question_11"
+msgstr "You take things literally and often ask: \"Are you serious?\". People often ask you the same question."
+
+msgid "SN_question_12"
+msgstr "You usually think about few things at the same time. Friends and co-works often accuse you for your abstractedness."
+
+msgid "SN_question_13"
+msgstr "You tend to think that the future and everything it brings is exciting rather than terrifying. Usually you think more about the future than about the present."
+
+msgid "SN_question_14"
+msgstr "You think that boring details are useless."
+
+msgid "SN_question_15"
+msgstr "Time is relative. No matter what time it is, you do not consider yourself late, it's just that the meeting, lunch or event started without you."
+
+msgid "SN_question_16"
+msgstr "You are curious to know how things work."
+
+msgid "SN_question_17"
+msgstr "You like jokes and crosswords."
+
+msgid "SN_question_18"
+msgstr "You try to understand how things are interconnected, you do not believe everything and always ask: \"What does this mean?\""
+
+msgid "SN_question_19"
+msgstr "You often give general answers and do not understand why people don't understand it and ask you to be more specific."
+
+msgid "SN_question_20"
+msgstr "You are more likely to think about where to spend your next salary than to balance your checkbook."
+
+#
+# Questions T F
+#
+msgid "TF_question_1"
+msgstr "You can stay calm and collected in situations where others lose their temper."
+
+msgid "TF_question_2"
+msgstr "You settle disputes in the name of truth, not just for good."
+
+msgid "TF_question_3"
+msgstr "You prove your point of view for the sake of clarity, take part in disputes and support one or the other side desiring to expand you intellectual capacity."
+
+msgid "TF_question_4"
+msgstr "You possess more of a strong-willed character than a sweet disposition."
+
+msgid "TF_question_5"
+msgstr "You are proud of your objectiveness in spite of many people accusing you of being cold and indifferent. You know however, that it's far from the truth."
+
+msgid "TF_question_6"
+msgstr "You are capable of making difficult decisions and do not understand why people worry about things that have no direct relationship to them."
+
+msgid "TF_question_7"
+msgstr "You think it is more important to be right than to be liked by someone. You do not think that to work with people, you need to be sympathetic with them."
+
+msgid "TF_question_8"
+msgstr "You rely more on theories that are based on logic and science. For example, until you obtain enough information confirming a theory, you will be skeptical towards it."
+
+msgid "TF_question_9"
+msgstr "It is easier for you to remember numbers than faces and names."
+
+msgid "TF_question_10"
+msgstr "You think that a \"good\" decision is one that takes people's feelings into account."
+
+msgid "TF_question_11"
+msgstr "You think it is impossible to fully define love, and are indignant to those why try to do that."
+
+msgid "TF_question_12"
+msgstr "You do everything to meet the needs of other people, and help others even if your own well-being has to be sacrificed."
+
+msgid "TF_question_13"
+msgstr "You put yourself into other people's shoes. Probably, you are one of those who asks during a meeting: \"How is our decision going to affect those who are involved\"."
+
+msgid "TF_question_14"
+msgstr "With pleasure you do favors but find that some people abuse that."
+
+msgid "TF_question_15"
+msgstr "Sometimes you wonder if nobody cares about what you want. Often however, you cannot ask this question out loud."
+
+msgid "TF_question_16"
+msgstr "Without hesitation you will take your words back if you think they offended somebody. Others think you are indecisive because of that."
+
+msgid "TF_question_17"
+msgstr "You prefer harmony. Conflicts with friends distract you and you tend to avoid them (Let's change the subject) or smoothen them (Let's shake each other's hands and stay friends)."
+
+#
+# Questions J P
+#
+msgid "JP_question_1"
+msgstr "You often wait for others, they are always late."
+
+msgid "JP_question_2"
+msgstr "You assign each thing its own place and do not settle down until all things are in their proper places."
+
+msgid "JP_question_3"
+msgstr "You think the world could be much better if everyone was doing what is required of them and when it is required."
+
+msgid "JP_question_4"
+msgstr "After waking up you know exactly what you are going to do during the day; you have a plan you follow and if it is broken, is you become confused."
+
+msgid "JP_question_5"
+msgstr "You do not like surprises and make that clear for others."
+
+msgid "JP_question_6"
+msgstr "You write down the things that have to be done. If more things have been done, you add them to your list just to check them off."
+
+msgid "JP_question_7"
+msgstr "You like getting things organized. The things on your desk are laid out according to a system, you bind documents the same way."
+
+msgid "JP_question_8"
+msgstr "You often get accused of chafing, which is not true, you are just expressing your opinion."
+
+msgid "JP_question_9"
+msgstr "You like to completely finish your job and clean things up after yourself, even if you know you will need to redo it."
+
+msgid "JP_question_10"
+msgstr "You are a distracted person, you can easily get lost when leaving the train to get into the car."
+
+msgid "JP_question_11"
+msgstr "You like to learn things even if it is just a new route home."
+
+msgid "JP_question_12"
+msgstr "You do not give yourself a task, you wait until its clear what is required from you. You are often accused with not being organized but you know it is not true."
+
+msgid "JP_question_13"
+msgstr "You put in a big effort last minute just to finish in time which works for you but drives everybody else crazy."
+
+msgid "JP_question_14"
+msgstr "You do not think that tidiness is the most important thing, however you like things in order. What's more important is creativity, spontaneity and feedback."
+
+msgid "JP_question_15"
+msgstr "You turn every work into something fun, if a job cannot be amazing it does not make sense."
+
+msgid "JP_question_16"
+msgstr "Often you change the subject of a conversation. The new subject can be anything that comes to mind or appears in sight."
+
+msgid "JP_question_17"
+msgstr "You do not like to be obligated, you prefer not to rush with decisions."
+
+msgid "JP_question_18"
+msgstr "Sometimes you are not against uncertainty."
+
+#
+# ESTJ
+#
+msgid "All_description"
+msgstr "<a href=\"https://en.wikipedia.org/wiki/Victor_Gulenko\" target=\"_blank\">description by V. Gulenko</a>"
+
+msgid "ESTJ_title"
+msgstr "Administrator (Stierlitz, ESTJ)"
+
+msgid "ESTJ_description_1"
+msgstr "1. The Administrator is persistent and efficient, a hard worker, cannot sit around without work. He fights against chaos and disorder wherever he is. He is highly responsible, prefers actions to words, does not tolerate cunning and craftiness and directly expresses his opinion."
+
+msgid "ESTJ_description_2"
+msgstr "2. Most of all, he values quality. The Administrator always helps when somebody is in physical danger, he is brave and firm in such situations. This person is caring, provides material support to his family. He rests as thoroughly as he works."
+
+msgid "ESTJ_description_3"
+msgstr "3. In business The Administrator is cool and official but in informal atmosphere he shows hospitality and humour. At the same time he lacks diplomacy in relationships, can get fussy and heated up. This person is a debater, he is chafing when proving his rightness. He is unable to make compliments."
+
+msgid "ESTJ_description_4"
+msgstr "4. The Administrator may be stuck in operational details of his work and miss the deadline, but he will be worrying about that. He is not ready for surprises, would not chat about nonsense but it's hard for him to interrupt a phone conversation. He does not like to be distracted from work. This person is a conservative supporter of traditions, with difficulty he accepts new fashion trends."
+
+msgid "ESTJ_description_5"
+msgstr ""
+"Your strong side is strict logic of facts which allows you precisely plan the practical side of any business. You are realistic and are able to correctly evaluate usefulness and efficiency of planned arrangements. You have a good savvy and knowledge in your area. You are an active and energetic person, don't like wasting time, always know what you want and are able to achieve that with hard work and "
+"persistence. You can rationally and efficiently use material resources."
+
+msgid "ESTJ_description_6"
+msgstr "You have an ability to create wealth and comfort for your family. You aim for wealthy, healthy, harmonious life, don't spare energy for that and induce others for various helpful actions. You have good organisational skills, can create good conditions for work, interest people and only after that demand results. You value the quality of work and do not tolerate the lack of discipline and laziness."
+
+msgid "ESTJ_description_7"
+msgstr "You like nice and neat things, tasty and healthy food. You like when others judge you by merits and do not encroach on your independence in making decisions and choosing methods of work."
+
+msgid "ESTJ_description_8"
+msgstr ""
+"You weak side is the inability to plan alternative long term arrangements. Often you find yourself overloaded with unexpected work and need to prepare in advance for important events. Sometimes it is hard for you to predict coming danger or failure. Unexpected events which you could not predict ahead of time irritate and even discompose you. It's hard for you to wait long for results especially if you "
+"are not sure about their success."
+
+msgid "ESTJ_description_9"
+msgstr ""
+"It is recommended for you to review your opinions on different sides of life and reject outdated traditions and habits. Dry logic of facts should not suppress your feelings for the new and unusual. Moderate your conservatism and stubbornness, compare yourself to others more often and raise flexibility in competition. You are inclined to rely on intuition when it comes to other people and do not even "
+"suspect that you actually overestimate your abilities as you are not insured from mistakes. This may lead to inappropriate suspicions and even roughness in communicating with others which may put you in an uncomfortable position. Show more control and tact in such cases."
+
+msgid "ESTJ_description_10"
+msgstr "Another issue is your inability to restrain emotions with relatives who do not obey your directions and requests especially when their actions are not logical or do not make sense. This is even more unpleasant because with other people you behave properly and show restraint and good manners. Your relatives may be offended because of that."
+
+msgid "ESTJ_description_11"
+msgstr "Your temper may push your relatives away. Be more tolerant, wait a bit before saying the truth. Unnecessary directness does not usually help. Calm down first and then think about what is better to say and in what way."
+
+msgid "ESTJ_description_12"
+msgstr "Learn to relax and switch your attention from work to rest. You have a good sense of humour so try to look at conflicts from that perspective. This will comfort you and let emotions out in an acceptable form. Read more fiction, go to the theatre because such recreation will soften your strong character and help raise your generosity."
+
+#
+# ENTJ
+#
+msgid "ENTJ_title"
+msgstr "Entrepreneur (Jack London, ENTJ)"
+
+msgid "ENTJ_description_1"
+msgstr "1. The Entrepreneur is an enterprising person who can is always eager to take on tasks. He leans towards innovations, notices new theories and developments and attempts to find their application. He is restless, likes camping, tourism, alpinism, running etc. He courageously experiments contradicting ordinary ideas. He always knows where he is going and explains this goal to others."
+
+msgid "ENTJ_description_2"
+msgstr "2. The Entrepreneur is not afraid to take a risk, relying on his intuition. He comes up with the most unusual ideas and has a rich imagination. He is a good inventor and game technician, always proactive knowing that it will be too late tomorrow. This person loves nature and gives it a special meaning. He has cognitive interest in multiple fields."
+
+msgid "ENTJ_description_3"
+msgstr "3. The Entrepreneur is an optimist with a good sense of humour. However his jokes are not always appropriate. Because of indiscriminate contacts he may be drawn into gambling. He is anxious, talks a lot and does not pay attention to the lack of time."
+
+msgid "ENTJ_description_4"
+msgstr "4. The Entrepreneur does not worry about appearance as long as the job gets done, does not pay attention to order and comfort around himself. From nature he is enduring and has a good health which he supports with alternative medicine. Such person does not stand a waste of time. This prevents him from relaxing even while resting."
+
+msgid "ENTJ_description_5"
+msgstr "You strong side is enterprise in new tasks and undertakings. You start new tasks with passion, putting all your energy into them, to achieve the desired results."
+
+msgid "ENTJ_description_6"
+msgstr "You are the practical person, are able to apply any theory and idea with benefit, take active part in the introduction of new technologies. You do not waste your time on trifles and are particularly attracted by big goals and projects."
+
+msgid "ENTJ_description_7"
+msgstr "You can be called a man of action since you do not postpone the implementation of your decisions for too long. You quickly engage in new business and do everything to finish it. You are an optimist who believes in success of the task you started."
+
+msgid "ENTJ_description_8"
+msgstr "You willingly share your plans with others, like to challenge yourself in different areas, boldly take risks and are ready for any difficulties."
+
+msgid "ENTJ_description_9"
+msgstr "You constantly have issues with organizing day-to-day life. Often you don't have enough time for rest. In spite of the adherence to healthy lifestyle you do not take care of your health regularly. Try combining business with pleasure, do not concentrate too much on one task."
+
+msgid "ENTJ_description_10"
+msgstr "Follow a rational everyday routine, mixing work with rest. Start jogging, pay more attention to your appearance and do not neglect others' opinions about yourself. Pay more attention to daily household tasks. Show more care towards your loved ones, devote more time to them, surprise them more often and try to understand their problems."
+
+msgid "ENTJ_description_11"
+msgstr "Try cultivating an aesthetic taste, do not sacrifice your physical appearance to other goals even if they seem more important. Do not abuse extravagant actions, be especially careful with private matters, do not try to attract attention this way as others will misunderstand you. Without intending it, you may break a relaxing atmosphere and put yourself and your friends into a difficult situation."
+
+msgid "ENTJ_description_12"
+msgstr ""
+"Another issue is related to ambiguous humor and jokes which may be misunderstood by others. Be tactful and modest in your statements, do not try to cheer people up at just any price. Remember that not everyone likes a playful tone and especially irony or mockery. Avoid excessive familiarity during conversation, educate politeness and good manners. This will increase your self-esteem and will draw "
+"respect of others towards you."
+
+msgid "ENTJ_description_13"
+msgstr "Do not confront others about non-essential matters, this may oppose others and decrease their respect. Do not let your emotions out too soon and don't let your actions happen before your think about them. It's better to separate yourself from somebody who is irritating you, calm down, think and express your opinion during the next meeting."
+
+#
+# ESFJ
+#
+msgid "ESFJ_title"
+msgstr "Enthusiast (Hugo, ESFJ)"
+
+msgid "ESFJ_description_1"
+msgstr "1. The Enthusiast is emotional and sociable, knows how to cheer someone up. With pleasure, he talks about his connections and acquaintanceships. His mood changes suddenly, from joy to anger and back. This person looks after ethics and others behaviour."
+
+msgid "ESFJ_description_2"
+msgstr "2. The Enthusiast is attentive and hospitable. He can create cosiness from anything, cares for his health the health of loved ones, likes to make presents and make others happy. He is a great organizer of leisure and special events."
+
+msgid "ESFJ_description_3"
+msgstr "3. It is hard for The Enthusiast to restrain his emotions. He can be meticulous towards people he does not like. He gets disappointed when his efforts are not appreciated. This person is quite bustling and scatter-brained, always overloaded with unnecessary tasks."
+
+msgid "ESFJ_description_4"
+msgstr "4. The Enthusiast poorly anticipates life shocks and dramatic events. He expects only positive results thus often vulnerable to stress related to hopes and dreams that did not come true. He is constant with habits and ways to pass time By overestimating available time he often does not finish everything planned. Often he starts necessary work last minute and thus has to rush things."
+
+msgid "ESFJ_description_5"
+msgstr "In daily life you are an open, communicative and friendly person. That is the reason why other people like you. Being an empathic and sympathetic person you usually help those in need and do not leave others in trouble."
+
+msgid "ESFJ_description_6"
+msgstr "You know how to please people. You are a hospitable and thoughtful person, are able to spend time meaningfully - go to the movies, theatre, concerts and often visit friends. You like pleasant trips and traveling. You like to spend time with loud and merry friends, and you like to party. You enjoy giving presents and making others happy."
+
+msgid "ESFJ_description_7"
+msgstr "Your main issue is an inability to spend your time wisely in day-to-day life, you are too hasty and never have enough time. You are drowning in never-ending work and troubles often forgetting about the main things."
+
+msgid "ESFJ_description_8"
+msgstr "Try planning your day correctly. Postpone small and unimportant tasks and issues. Do not jump on things right away because you may not be able to finish everything in time and become vulnerable to surprises."
+
+msgid "ESFJ_description_9"
+msgstr "Try isolating primary events in a sequence and predict their progress. You may be too demanding and harsh to relatives and friends which causes disappointment in people. Once you are deceived or disappointed with one person you become suspicious and mistrustful of all others. Under the influence of these emotions you may overstate shortcomings of other people."
+
+msgid "ESFJ_description_10"
+msgstr "Learn to harmonize your requirements with real life. Be tolerant with people, indulgent to their flaws. Remember nobody is ideal. By putting too much emotional pressure into relationships you may destroy their established harmony."
+
+msgid "ESFJ_description_11"
+msgstr "Another issue is your excessive wastefulness of energy and material resources. The inability to control day-to-day expenses does not let you create necessary funds. Save your energy, do not start tasks if they are not going to give a good return."
+
+msgid "ESFJ_description_12"
+msgstr "Refuse endless meetings with relatives and friends. Instead do some work around the house to spare some time for rest. Try to keep things more organized at home, get rid of useless items, do not accumulate them."
+
+msgid "ESFJ_description_13"
+msgstr "The less useless stuff you have the easier it is to find things you need. Moderate your hospitality, don't impose treats and try keeping right proportion in everything."
+
+#
+# ENFJ
+#
+msgid "ENFJ_title"
+msgstr "Mentor (Hamlet, ENFJ)"
+
+msgid "ENFJ_description_1"
+msgstr "1. The Mentor possesses deep emotionality and ability to feel quite well, the condition of other people. He is a romanticist in feelings, artistic and sublime. This person can easily manage their range of emotions shown and easily goes from dramatism to optimism. The Mentor is oriented towards polite communication, without any rudeness or prodding."
+
+msgid "ENFJ_description_2"
+msgstr "2. The Mentor warns people about coming danger. Being able to anticipate alarming situations, he gets ready in advance and thinks through alternate options. He is interested in paranormal activities. He likes to be alone and think about the meaning of life, the past and the future. He thinks about everything from a global prospective."
+
+msgid "ENFJ_description_3"
+msgstr ""
+"3. The Mentor, when immersed in a specific activity, may forget to eat and rest. He takes on difficult tasks but takes any failures close to heart. His goal is to mobilize people for business but specific tasks must be defined by other people. He tends to collect and order information related to the field he is interested in. At the same time he rarely comes back to something that has already been "
+"researched."
+
+msgid "ENFJ_description_4"
+msgstr "4. The Mentor struggles because of doubts and hesitation related to existing issues of his life support. He does not keep track of his health well enough, has difficulty getting rid of bad habits. He does not trust compliments, dresses either exaggeratedly casually or totally simply. His taste in food leans towards a combination of opposite tastes."
+
+msgid "ENFJ_description_5"
+msgstr "Your most developed side is the ability to have strong feelings and emotions. You are the person with a complex spiritual world full of contrasts and contradictions. You can sacrifice a lot for true deep feelings."
+
+msgid "ENFJ_description_6"
+msgstr "Your poetic nature allows expressing feelings in different form, often dramatic, sometimes tragicomic."
+
+msgid "ENFJ_description_7"
+msgstr ""
+"You may possess a talent of a speechmaker which can be used to inspire a lot of people, sometimes without realizing that you did this. You are a farsighted and prudent person. You sense the developing of a crisis very well and can take appropriate actions in advance to avoid it. You also seek to warn others about possible troubles. This is an expression of the general humanitarian focus of your "
+"personality. You are quite a principled person and never forgive unfair offences and humiliation. Because of that, after thinking about it enough, you are capable of the most resolute measures."
+
+msgid "ENFJ_description_8"
+msgstr "However in some cases your integrity may not be flexible enough while your determination is excessive. Strive to exercise restraint in extreme situations and make decisions in a calm state of mind."
+
+msgid "ENFJ_description_9"
+msgstr "Your main issue is an inability to avoid situations that cause discomfort. You are not always able to fit into a new company, avoid unpleasant conversation with uninteresting people. You show uncertainty in tastes and an inability to properly take care of your health."
+
+msgid "ENFJ_description_10"
+msgstr "You are characterised by an inability to find a balance within yourself. Avoid unnecessary dramatization of events. Reduce accumulated emotions in creativity: singing, music, theatre etc."
+
+msgid "ENFJ_description_11"
+msgstr "Do not try to make an impression at any cost. This may harm your interests or health. Dress according to the weather, keep the sequence of food intake and choose healthy food. Strive to make your appearance and clothing style correspond to the situation."
+
+msgid "ENFJ_description_12"
+msgstr "Do not be mistrustful to compliments and judgements about your appearance, do no keep looking for a catch there. Learn to be more open in order to avoid such uncomfortable excessive curiosity of others. Trust people more, do not think they want to harm you."
+
+msgid "ENFJ_description_13"
+msgstr ""
+"Another issue you have is often unsuccessful demonstration of your business qualities, with the desire to show yourself as a \"go-getting\", active person. Do not overestimate the importance of your business initiative. Always ask yourself about the reality of your call to action and its ability to bring real positive results. Overcome unwillingness to consider day-to-day tasks, including work around "
+"the house. Explain your problems more specifically, do not be obtrusive towards other people."
+
+msgid "ENFJ_description_14"
+msgstr "Your communication with people may be impacted by unnecessary formalities. Avoid arrogance, be more tolerant and easy with others and do not abuse irony and mockery. Your tendency to sarcasm may offend people and turn them away from you."
+
+#
+# ESTP
+#
+msgid "ESTP_title"
+msgstr "Conqueror (Zhukov, ESTP)"
+
+msgid "ESTP_description_1"
+msgstr "1. The Conqueror is a strong and purposeful person who is able to influence people. He prefers only big goals and works on achieving them no matter what. He is a flexible tactician, does not neglect temporary compromise. His persistence proportionally grows together with the number of obstacles that have to be overcome."
+
+msgid "ESTP_description_2"
+msgstr "2. The Conqueror bring forth all his energy when it's needed. He thinks his action plan through logically and in advance, like he is playing a game of chess. He seeks to give directions to others but does not like a mandative tone towards himself. This person judges the completed job by the end result. Usually he takes the position of an informal leader."
+
+msgid "ESTP_description_3"
+msgstr "3. The Conqueror does not trust people until he checks them in action. At first he focuses on flaws and weaknesses in people. He does not foresee the future well, hesitates when situation goes out of control or takes an unexpected turn. If there is no sense of struggle he dips into doubt and a bad mood."
+
+msgid "ESTP_description_4"
+msgstr "4. The Conqueror does not control negative emotions well while in relations with other people. His feelings always have a shade of physical possession of the partner. Such a person is not always sure about others' attitude, may be impatient with loved ones and in a difficult situation does not leave room for pity or compassion."
+
+msgid "ESTP_description_5"
+msgstr "Without a doubt, you are a strong and purposeful person who always sets large and far-reaching goals. You do not like wasting energy on small and non-essential tasks. You are flexible and react well, you compromise but do not lose the sight of the main goal."
+
+msgid "ESTP_description_6"
+msgstr ""
+"Your active personality is demonstrated especially well in critical situations. Your persistence in overcoming obstacles grows proportionally to their quantity. You are a very passionate person who does not take a risk for no reason. You like occupations that offer an opportunity to show qualities such as courage, inventiveness, will and calmness when in danger. You possess good organizational skills, "
+"are able to find the right people, put them in the right place and direct their efforts towards the main goal."
+
+msgid "ESTP_description_7"
+msgstr ""
+"You do not show off your merits and prefer to stand back while motivating others to do what you need. You feel responsibility for the job assigned to you. One of the main problems in your life is the lack of tact and diplomacy with people. Sometimes you show outright intolerance to the shortcomings and weaknesses of others. You are able to overstep interests of someone to achieve your goal which may "
+"cause moral judgement towards you."
+
+msgid "ESTP_description_8"
+msgstr "Remember that the saying \"the end justifies the means\" is not always true. Develop tolerance. Respect dignity and feelings of others. Deep study of philosophy and religion which substantiate values common to all mankind can help you better understand the essence of human beings."
+
+msgid "ESTP_description_9"
+msgstr "Develop politeness and correctness towards others, show more respect towards people of the opposite sex. Do not lose romanticism, which makes your life brighter. Do not wait for exceptional initiative from your partner to show emotions, show them your favour more often."
+
+msgid "ESTP_description_10"
+msgstr "Another issue is your excessive focus on people's shortcomings or imperfections which may lead to an unfair attitude towards them."
+
+msgid "ESTP_description_11"
+msgstr "Be more sensitive and pay more attention to others - not only in words but in actions. Reply to questions, pay close attention while listening to people. Do not underestimate the role of intellectual work in business."
+
+msgid "ESTP_description_12"
+msgstr "Think more often about the possible consequences of your actions. Do not shift the responsibility for blunders on others as this may affect your reputation in the future. Try controlling situations which go out of the scope of formal communication. You can find yourself in a difficult situation by asking inappropriate questions which may seem tactless to others."
+
+#
+# ESFP
+#
+msgid "ESFP_title"
+msgstr "Politician (Napoleon, ESFP)"
+
+msgid "ESFP_description_1"
+msgstr "1. The Politician is a confident person, often with leadership skills. He is active and seeks work in the field of communications. He prefers to solve problems right away otherwise he may cool down because of his volatile character. This person pays much attention to a prestigious appearance, talks a lot on political and management topics."
+
+msgid "ESFP_description_2"
+msgstr "2. The Politician looks for new impressions, likes to be at the center of attention and impress others. He can build useful connections and use them. He is a master of maneuver between opposite sides, makes peace just as easily as quarrels."
+
+msgid "ESFP_description_3"
+msgstr "3. The Politician presents himself as a promising person with a lot of power. He easily makes compliments, says only things others want to hear and emphasizes his specialty and singularity. When relaxed likes to be sad, complain that others do not understand him. He may quote and give factual data to show erudition."
+
+msgid "ESFP_description_4"
+msgstr "4. The Politician is unable to understand priorities, avoids explaining his moves and often speaks outside of the topic. He is not able to organize things well, protests when somebody attempts to put him under strict rules, and prefers to talk to people instead of reading instructions."
+
+msgid "ESFP_description_5"
+msgstr "You strong side is ability to make decisions and persistence. Your type is inclined to lead, you are not afraid taking initiative to manage people for the sake of doing a big project. You are always confident in yourself."
+
+msgid "ESFP_description_6"
+msgstr ""
+"You know how to stand up for yourself, defend your authority from unfair attacks. You actively care for vital needs and interests of your relatives to provide a good standard of living. Your business and management skills attract attention. You have a lot of friends who respect and trust you. While feeling well the business qualities in people you can use them in your favour. Your sensitivity and charm "
+"allow you to find friends and earn sympathy. Multiple friends are ready to do a lot for you."
+
+msgid "ESFP_description_7"
+msgstr "Your difficulties are related to an inability to understand priorities in life tasks, which leads to a waste of energy and overwork. You need to develop perseverance and patience. Try finishing things before starting something new."
+
+msgid "ESFP_description_8"
+msgstr "Do not try solving each problem immediately, be consistent and look for different ways and approaches to solve difficult issues."
+
+msgid "ESFP_description_9"
+msgstr "Do more self-education and increase your theoretical knowledge. This will let you avoid accusations of incompetence and strengthen your authority. Focus your attention on big problems, do not waste energy on small tasks and arguments about nothing."
+
+msgid "ESFP_description_10"
+msgstr "Do not make rushed decisions, try analyzing the whole situation before acting."
+
+msgid "ESFP_description_11"
+msgstr "Be reasonable when evaluating achievements of others because subjectivity may cause unwanted difficulties in the team."
+
+msgid "ESFP_description_12"
+msgstr "Another issue is that you are too sensitive to criticism. As a vulnerable and touchy person you overreact after innocent remarks which complicates your relationships with people. You overestimate your physical and intellectual abilities. Be more realistic about that, as such over-confidence may cause physical or mental exhaustion."
+
+msgid "ESFP_description_13"
+msgstr "Be pickier about your contacts to avoid being discredited. Raise modesty in your desires, remember that it is not always possible to achieve the unachievable. . To avoid remorse, try not to lose your dignity even for the sake of the business."
+
+#
+# ENTP
+#
+msgid "ENTP_title"
+msgstr "Seeker (Don Quixote, ENTP)"
+
+msgid "ENTP_description_1"
+msgstr "1. The Seeker is able to clearly see distant prospects. A big inventor, he always has many new ideas and projects. He is curious about everything, hoping to find something unique. The Seeker usually neglects his past achievements and prefers to do something he is interested in rather than something that promises a realistic return."
+
+msgid "ENTP_description_2"
+msgstr "2. He tends to think a lot, trying to find patterns in different phenomena. The Seeker is quite a scattered person and often loses small items. His logic seems paradoxical to other people. Such a person is not afraid to go against an established opinion if he thinks it's old-fashioned. The Seeker wants to make a big invention or discovery."
+
+msgid "ENTP_description_3"
+msgstr "3. The Seeker is an easy-going person when it comes to day-to-day life and needs. He actively resists any attempts to be put on a strict schedule. Despite his search for an alternative to boring everyday life, in difficult situations he demonstrates wit and quickness. He does not accept any pressure."
+
+msgid "ENTP_description_4"
+msgstr "4. The Seeker does not have a good sense of distance with other people. He tries to be equally friendly with everyone, but expects some interest to what he is saying. This person is usually available for communication and is quite easy going. The Seeker periodically needs an emotional shake-up as in routine he tends to get upset."
+
+msgid "ENTP_description_5"
+msgstr ""
+"Your strength, undoubtedly is well-developed cognitive thinking. You often have interesting and prospective ideas. In your mind, you delve into events and predict the way they will develop. Your intuition helps you to make right decisions. You are capable of seeing things for what they really are. You read a lot and are interested in everything new and unusual. However, this poses a risk to \"exhaust\" "
+"your energy and lose the main focus which defines you as an individual."
+
+msgid "ENTP_description_6"
+msgstr "Logic is the main tool that helps you actualizing your ideas and expectations. You strive to logically substantiate your ideas and thus persuade others that your ideas are correct. Thanks to this quality your like-minded supporters unite around you. You are the enemy of everything dull and outdated, which poses a risk of finding yourself in the position of total denial."
+
+msgid "ENTP_description_7"
+msgstr "Your main issue is inability to figure out relationships between people. Understanding people's real attitude is especially difficult for you."
+
+msgid "ENTP_description_8"
+msgstr "After you intuitively figured out a particular person he is no longer interesting to you because you do not know what to do next with this person. This could set this person up against you. You also do not see your real foes. Do not hurry to draw conclusions about people's attitude towards yourself. Try to judge them by their objective actions."
+
+msgid "ENTP_description_9"
+msgstr "Stable and good relationships with relatives are hard to achieve for you. By accident you can show tactlessness which has the potential to destroy an established harmony."
+
+msgid "ENTP_description_10"
+msgstr "Try to hold back the urge of responding immediately to actions of loved ones. These next recommendations are equally important."
+
+msgid "ENTP_description_11"
+msgstr "Do not captivate yourself with excessive tolerance as it may imperceptibly transform into a familiarity which can undermine your authority among people."
+
+msgid "ENTP_description_12"
+msgstr "Try to show more delicacy in your behavior so that others are not shocked because of your frankness and directness. This can create foes for you, without your desire."
+
+msgid "ENTP_description_13"
+msgstr "Another issue you have is an inability to be continuously concentrated, a sign of poor self-discipline. You tend to neglect daily tasks which causes a disruption of planned events and established work routine. Try doing things on time."
+
+msgid "ENTP_description_14"
+msgstr "If you are a manager try not to slide into voluntarism. Avoid unnecessary pressure on employees and do not be over-demanding, as such inadequacy may put you in an awkward situation."
+
+msgid "ENTP_description_15"
+msgstr "Direct your potential volitional energy into physical activity which will let you become more toned and develop endurance. You will become more collected and disciplined."
+
+#
+# ENFP
+#
+msgid "ENFP_title"
+msgstr "Advisor (Huxley, ENFP)"
+
+msgid "ENFP_description_1"
+msgstr "1. The Advisor is a discerning person who can see people's motives well. He is attracted by capable and extraordinary personalities. He can cheer up, give hope and give advice on finding a solution to difficult problems."
+
+msgid "ENFP_description_2"
+msgstr "2. The Advisor is an altruistic person. He can do more than others expect for the people he likes. He is an easy-going and friendly person, gains trust with his sincerity and warmth. This person can be offended when there is no emotional response. He tries to manage the feelings of others."
+
+msgid "ENFP_description_3"
+msgstr "3. In extreme situations The Advisor becomes active, fights back baseless attacks. He is lacking the will to do what is necessary. This person can poorly harmonize the desirable with reality. After taking initiative, he tries to find people who will provide implementation of his ideas without him."
+
+msgid "ENFP_description_4"
+msgstr "4. The Advisor becomes very tired of routines and thus changes hobbies quite often. He is not capable of painstaking jobs, poorly follows details, numbers, paragraphs. With difficulty, he follows time schedules, he is often late. Such a person does not obey strict discipline and does not respect formal subordination."
+
+msgid "ENFP_description_5"
+msgstr "Your strong side is a well-developed intuition which allows you to accurately determine the hidden abilities of other people. Your insight sharply registers negative talents in people."
+
+msgid "ENFP_description_6"
+msgstr "Trust more your first impression, as your kindness and forgiveness can lead you to idealize people after getting to know them better."
+
+msgid "ENFP_description_7"
+msgstr "You can show sensitivity and understanding to others, trying to help them sort out their personal problems and making them happy. While noticing talents and advantages of people you make them successful compliments trying to increase their self-esteem, improve their mood and give them confidence in achieving desired results."
+
+msgid "ENFP_description_8"
+msgstr ""
+"Another strong side of your personality is the ability to build warm and trustful relationships with people which inclines them towards sincerity. You use it then for their benefit by providing advice on how to get out of difficult situations, avoid mockeries and hasty decisions they may regret in future. From the other side, if a person has not justified your trust you build an invisible wall and try "
+"moving away. Your dislikes may be as strong as your likes but more often you skillfully support smooth relationships with people. You are a great diplomat."
+
+msgid "ENFP_description_9"
+msgstr ""
+"Your weak side is the inability to do long and painstaking jobs, follow rules and regulations, thoroughly document, work on details as well as work in tightness with a lot of people around and respect hierarchy in spite of individual qualities of management. Tasks like unbiased logical analysis and separation of primary and secondary are difficult for you which makes you drown in endless tasks and "
+"change hobbies often. Spreading tasks out over time correctly is also difficult for you which leads to overwork and dissatisfaction with life in general."
+
+msgid "ENFP_description_10"
+msgstr "The recommendation is to work out a flexible but precise schedule and follow it. While planning tasks for tomorrow define the importance for each one."
+
+msgid "ENFP_description_11"
+msgstr "While trusting your watchfulness remember that it works only for people, and in business rely on professional opinion, otherwise blame in superficiality is unavoidable. Read more, write down the most important rules and statements. Remember that improvisation and general understanding is not enough to move forward."
+
+msgid "ENFP_description_12"
+msgstr "Another issue you have is poor willpower, inability to control yourself under any circumstances. You hesitate often when it comes to making important decisions and unexpected aggression may impact your relationships with others. While your courage and determination helps in extreme situations, in ordinary ones you often feel indifference and apathy."
+
+msgid "ENFP_description_13"
+msgstr "Train self-control and consistency in yourself, do everything more thoroughly and try finishing the job started."
+
+msgid "ENFP_description_14"
+msgstr "Try to avoid pushing on others without necessity, offering intrusive advice, demanding immediate actions."
+
+msgid "ENFP_description_15"
+msgstr "Try controlling your emotions. Meditation can be very helpful for you. If you feel a conflict is unavoidable try stopping the conversation right away so that you do not regret about what has been said or done later on. Do not worry about the little things, do not concentrate too much on your feelings as it may negatively impact your health."
+
+#
+# ISTJ
+#
+msgid "ISTJ_title"
+msgstr "Inspector (Maxim Gorky, ISTJ)"
+
+msgid "ISTJ_description_1"
+msgstr "1. The Inspector distinguished by his accuracy and concreteness. He particularly works out details, carefully prepares events. Business is more important than mood. He respects laws and regulations, keeps personal belongings organized. He is always reliable and overcomes life difficulties steadfastly."
+
+msgid "ISTJ_description_2"
+msgstr "2. The Inspector is a strong-willed person, assiduous and hardy. He is persistent and demanding when it comes to executions of orders. He patronizes those who are struggling and explains to them how to do the job. This person is realistic and cannot stand barren fantasies. He proves himself right by bringing up multiple facts."
+
+msgid "ISTJ_description_3"
+msgstr "3. During communication with colleagues and friends he is polite and courteous. The Inspector can create the impression of being an intelligent and well-mannered person but in close relationships he changes toward brutality. In spite of sociability he needs some solitude. This person shows tendency of edification when preaching ethical rules."
+
+msgid "ISTJ_description_4"
+msgstr "4. Everything The Inspector can do he tends to expect from others as well. Diving into details and numbers he may lose the big picture. This person is uncompromising in his judgements. Collapse of ideals he was following for a long time turns into a personal tragedy. The Inspector does not trust strangers, he also loses trust after noticing something negative about the person."
+
+msgid "ISTJ_description_5"
+msgstr "Your strong side is the logic and ability to study any problem or event in detail. You are the responsible person who never wastes words."
+
+msgid "ISTJ_description_6"
+msgstr ""
+"You are characterised by a tendency to organize things, be disciplined, and follow strict rules and regulations. You hate any kind of laxity and irresponsibility. You are a reasonable person who is guided by logic, not emotions when making decisions. You are inclined to deeply study certain areas of life. You are a persistent and purposeful person. There is no doubt you are a good administrator who "
+"always controls the correctness of decisions made. You are also a supporter of disciplinary measures to people who don't meet their commitments. Do not overdo the administrative pressure. Try to first understand true motives of discipline violation."
+
+msgid "ISTJ_description_7"
+msgstr "You respect authorities and utilize only trusted sources of information. You do not accept any trade-offs while performing your duties, you are disciplined, organized, executive and keep things ordered in life and at work."
+
+msgid "ISTJ_description_8"
+msgstr "One of your main issues is the uncertainty in situations that require breakage of existing views without clear perspectives. You do not usually trust unexpected ideas and suggestions which require abandonment of past values or flexibility. In these conditions you may feel an upcoming chaos, instability and loss of landmarks. After weighing all pros and cons try to turn from past stereotypes."
+
+msgid "ISTJ_description_9"
+msgstr "Learn everything new and unconventional so that new ideas do not surprise you. Trust people more, do not think that somebody's intrigues are the reason for your failures. Do not apply the same requirements to everyone, remember that each individual has different abilities. Try to work out an individual approach to everyone."
+
+msgid "ISTJ_description_10"
+msgstr "If you are a manager try not to hold back the creative initiative of subordinates. Do not try to control their every move. Avoid earning your manager's favor by following all regulations and instructions even if they are obsolete."
+
+msgid "ISTJ_description_11"
+msgstr ""
+"Expand the range of your interests and hobbies, do not focus on one single thing. Moderate your realism when criticising something new, something that deviates from rules and regulations. Remember that the most innovative ideas in the past, have never been mentioned a single reference book. Another issue you have is irregularities in communication with others - your unnatural sharp transitions from "
+"demonstration of courtesy and sensitivity to manifestations of authority and demands. Remember that in close relationships you are inclined to demonstrate incontinence and even rudeness."
+
+msgid "ISTJ_description_12"
+msgstr "Try to have smooth and fairly restrained relationships with people to avoid possible misunderstanding and conflicts. Do not lose the sense of proportion while dealing with people: do not be neither overly helpful nor too intrusive with your problems. Remember that others are not obligated to help you."
+
+msgid "ISTJ_description_13"
+msgstr "Don't tire people with redundant sermons and moralization. Even if you are right, with such a didactic tone you are risking to amass enemies for yourself."
+
+#
+# INTJ
+#
+msgid "INTJ_title"
+msgstr "Analyst (Robespierre, INTJ)"
+
+msgid "INTJ_description_1"
+msgstr "1. The Analyst possesses a developed logic and ability to analyze. He can precisely separate primary from secondary. Structures, classifications and concepts are his style. Such a person is objective, sharp in his judgements and assessments, usually ignores rules and directions he does not like."
+
+msgid "INTJ_description_2"
+msgstr "2. Once he understands the problem The Analyst suggests new solutions. He is quite tolerant to other points of view and lifestyles. His behaviour is often a mystery to others as majority of his decisions are intuitive. Often this person has a hobby and constantly improves skills in this area. He keeps a discussion going only when the subject is important to him."
+
+msgid "INTJ_description_3"
+msgstr "3. The Analyst is not good at understanding people's feelings, often stubborn and not flexible in relationships, closed, does not like unexpected guests and is not able to entertain them. He is cautious with people and often keeps his distance. The more sympathetic he is to a person the less he demonstrates interest outwardly. He persistently follows the system of relations that he is used to."
+
+msgid "INTJ_description_4"
+msgstr "4. In daily life The Analyst is ready to be satisfied with minimum amenities. Day-to-day duties oppress him. In spite of stubbornness he is not pushy and is unable to subordinate people. In critical situations he is hesitant, does not respond well to force."
+
+msgid "INTJ_description_5"
+msgstr ""
+"Your strong side is analytical and structural thinking, an ability to catch patterns in any phenomena. You are focused on objectiveness and fairness. When evaluating people you go by their contribution and not by personal preference. When doing something you always separate out the main things and discard secondary unimportant details. You can also precisely and logically present the material and "
+"communicate the idea to listeners. You become an active supporter of an idea as soon as it has been analyzed and its importance and prospect have been understood. Your creative intuition feeds it with new flashes."
+
+msgid "INTJ_description_6"
+msgstr "You have the ability to treat specific people gently. You are able to notice a person, reveal his abilities and instill confidence in them."
+
+msgid "INTJ_description_7"
+msgstr "The main issue in your life is inability to actively defend your own interests and a weak self-confidence. You are characterized by hesitancy, lacking instantaneous reaction during a change in situation. Such inefficiency and slowness can hurt you."
+
+msgid "INTJ_description_8"
+msgstr "Try to claim your rights boldly if you are confident in their validity."
+
+msgid "INTJ_description_9"
+msgstr ""
+"Do sports such as tennis, downhill skiing, motoring or boxing which develop an ability to make decisions and fast reaction. Alternate brainwork with physical activities. Do exercises that develop attention, concentration as well as work that develops these qualities, for example, collecting mushrooms, berries, fishing. You need somebody to support your undertakings. Your surroundings should contain "
+"optimistic and strong people who will be able to shake you from time to time and help overcoming pessimism and frustration."
+
+msgid "INTJ_description_10"
+msgstr "Another issue you have is inability to communicate, creating a huge psychological distance perceived by others as obduracy and estrangement. Sometimes you consciously doom yourself to loneliness. Do not be gloomy and moody, smile more often, be affable but do not go too far as it's hard for you to say no."
+
+msgid "INTJ_description_11"
+msgstr "Choose your necessary contacts carefully to avoid overworking and unnecessary problems. Try not to lose established emotional connections. You can help many people with your judgement and understanding. Keep in mind that not everyone can analyze events and abstract from emotions like you."
+
+msgid "INTJ_description_12"
+msgstr "Try to bring up morality and common ethics in yourself daily. Consider other people's interests. Introspect problems of others so that they cooperate with you. Remember that people are offended when treated superficially and carelessly."
+
+#
+# ISFJ
+#
+msgid "ISFJ_title"
+msgstr "Guardian (Dreiser, ISFJ)"
+
+msgid "ISFJ_description_1"
+msgstr "1. The Guardian is principled and mature, clearly sees foes and sharply divides people into insiders and outsiders. He judges the morality of people's actions, keeps his territory organized and clean, does not acknowledge friendship without mutuality."
+
+msgid "ISFJ_description_2"
+msgstr "2. While making a decision The Guardian evaluates the severity of his future actions. He actively protects himself and his loved ones from attacks. If he decides to do revenge for something, he is able to find the most vulnerable spot of the enemy. He does not allow himself to be taken by surprise. This person is pragmatic in daily life, uses everything available on his territory."
+
+msgid "ISFJ_description_3"
+msgstr "3. The Guardian tries to look balanced and emotionless, takes personally accusations in injustice and bias. He requires physical distance and does not like to stay alone with one person for a long time. Strangers in the house irritate him. This person with difficulty changes the way of life he is used to."
+
+msgid "ISFJ_description_4"
+msgstr "4. The Guardian does not like uncertain situations when it's not possible to say for sure yes or no. He would not wait long if promises are not being supported by actions. The closer an expected event is, the more nervous he becomes. Such a person lives by present problems and never looks into the future. He feels uncertainty when starting a job he is not familiar with."
+
+msgid "ISFJ_description_5"
+msgstr ""
+"Your strong side is the ability to give fair moral evaluation to somebody's actions. You do not tolerate demonstration of evil and injustice when it comes to people's relationships. You appreciate a sense of duty and moral principles from yourself and others. You are able to gain trust by understanding person's problems and finding an interesting topic of conversation for them. You try to listen, "
+"understand and help with advice. You rarely make mistakes when making conclusions about people's real attitude."
+
+msgid "ISFJ_description_6"
+msgstr "You are a gathered, strong-willed and determined person. If necessary you are able to protect yourself and your family. You are a dedicated worker when it comes to keeping things clean and organized at home and at work. You move towards a goal consistently and persistently. Also, you are direct and intransigent in settling your point and criticising flaws. You are respected and"
+
+msgid "ISFJ_description_7"
+msgstr "appreciated for such adherence to principles, firmness and seriousness."
+
+msgid "ISFJ_description_8"
+msgstr "In life you face the necessity to avoid uncertain and unclear situations when it's hard for you to show endurance and patience. You do not like waiting too long for important decisions as it is vital for you to ensure a favourable outcome in a short term."
+
+msgid "ISFJ_description_9"
+msgstr "Try to meet interests of others so that they are willing to help you with your plans but do not expect people to demonstrate something that is not inherent to them by their nature. Be more patient with the shortcomings of others."
+
+msgid "ISFJ_description_10"
+msgstr "It's also difficult for you to understand hidden causes of phenomena. To avoid hasty conclusions and decisions, do not neglect advice from experienced and discerning people."
+
+msgid "ISFJ_description_11"
+msgstr "Aim for liberation of your mind, get rid of stereotypes, encourage in yourself a creative imagination. Read more on various subjects, this will help developing holistic understanding of the world."
+
+msgid "ISFJ_description_12"
+msgstr "Do not become locked inside your frames, communicate with more people. This will give additional confidence in your abilities."
+
+msgid "ISFJ_description_13"
+msgstr "Another issue is your inability to create an informal atmosphere for conversation. You prefer working alone and get tired from presence of large amount of people."
+
+msgid "ISFJ_description_14"
+msgstr "Do not make communication with only the right people a cornerstone to avoid coming across as a selfish person. Be natural with your emotions, overcome internal constraint."
+
+msgid "ISFJ_description_15"
+msgstr "Avoid two extremes: excessive formality on one hand, and the casualness and debauchery on the other. Try not to stare at your partner as it may confuse them. Smile more, show people your favour. Remember that with smile and kind word you can reduce stress, set a required distance and incline people to courtesy in response."
+
+#
+# INFJ
+#
+msgid "INFJ_title"
+msgstr "Humanist (Dostoyevsky, INFJ)"
+
+msgid "INFJ_description_1"
+msgstr "1. The main feature of this person is humanism and compassion for people. The Humanist has smooth and friendly relations with everyone. He is a peacemaker, can reconcile enemies and stay objective at the same time. By listening to people, he reduces their emotional stress. He does not remember evil, forgives offenders and foes."
+
+msgid "INFJ_description_2"
+msgstr "2. The Humanist is ready to help those who ask for support, prefers quiet persistence and durability over violence. While tolerant and compliant, he does not forgive betrayal and injustice. This person is able to see alternatives and omissions in new undertakings. He reveals people's flaws but nicely, in a gentle form."
+
+msgid "INFJ_description_3"
+msgstr "3. The Humanist appears to be a hard worker, attentive to details and a disciplined person. He prefers calm life, he is conscientious but slow in doing a specific job since he needs detailed instructions on how to do it. The Humanist does not like crowds and loud compliments."
+
+msgid "INFJ_description_4"
+msgstr ""
+"4. This person is not self-confident and does not have a lot of initiative but is able to do more if that is expected of him. He is impressionable and vulnerable, and takes rudeness with difficulties. He would not push on people or be aggressive but may harshly respond to attempts of dictate. Full ignorance is his strongest punishment. Others may take advantage of his kindness as it's hard for The "
+"Humanist to say no."
+
+msgid "INFJ_description_5"
+msgstr "You strong side is a deep understanding of people and relationships. You are interested in motives, sincere qualities and relationships you have been observing for a long time. The longer this lasts the better you can determine their personality - who the people really are and not what they want to look like."
+
+msgid "INFJ_description_6"
+msgstr "You seek warm and friendly relationships with other people, do not take rudeness and violence. This appears to be the humanistic side of your personality, the cause of other's respect. Your knowledge of people and experience will always help finding your place in the team."
+
+msgid "INFJ_description_7"
+msgstr "Another advantage that brings you peoples' gratefulness is constant kindness and attention to others. You show compassion with actions, not just with words. Sparing no effort and time you give help to everyone who needs it."
+
+msgid "INFJ_description_8"
+msgstr "The final goal of your activities is a quiet, harmonious and conflict-free atmosphere where everyone can reveal their abilities. You are the best comforter and peacemaker. By forgiving people their negative actions you influence their conscience and make them think about ethical of aspects life."
+
+msgid "INFJ_description_9"
+msgstr "By forgiving people their negative actions you influence their conscience and make them think about ethical of aspects life."
+
+msgid "INFJ_description_10"
+msgstr "The issue that concerns you is the lack of determination and initiative, an inability to demand. These are caused by the shyness and even timidity more or less inherent in your personality. You are very nice, are afraid to appear intrusive by inappropriately driving attention to yourself."
+
+msgid "INFJ_description_11"
+msgstr ""
+"You are a modest, non-aggressive person. After taking the challenge you do not venture to actively react, preferring to keep insults to yourself. You are not even comfortable to accept protection from others. You think that the person who offended you should understand that himself and regret it. If this person does not do that you try to avoid him, punishing him with silence. It is recommended that you "
+"develop self-defence - express disapproval of dishonesty directly. Do not be sorry for people who are not able to mend and repent, don't let others use you for their benefit. Learn to say no when required. Sympathise less to external people and pay more attention to the people who are close to you."
+
+msgid "INFJ_description_12"
+msgstr ""
+"Another issue is too detailed approach to any task which causes slowness and the lack of emotions. Drowning in details you barely find time for good rest outdoors or in the company of friends. This may badly affect your health. You thoroughly and deeply analyze everything related to you and your friends. The results of such analysis are often disappointing which makes you feel sad. Everything that goes "
+"outside of the scope of decency, morality and spirituality excessively oppresses you."
+
+msgid "INFJ_description_13"
+msgstr ""
+"Do not follow your compassion so that you don't blame yourself afterwards, for the deviation from honesty and fairness. Remember that true justice does not allow any compromise with conscience. Speed up your work, concentrate so that your attention passes the small details and stops on the main and important. Try speed reading. It will help you to see the bigger picture. Analyze facts, strive to "
+"generalize instead of specifying. Knowledge of common laws can help avoiding the waste of time and energy on unjustified and unimportant things."
+
+#
+# ISTP
+#
+msgid "ISTP_title"
+msgstr "Craftsman (Gabin, ISTP)"
+
+msgid "ISTP_description_1"
+msgstr "1. The Craftsman values comfort and neat things. In clothes, he prefers convenience to appearance. He works well with his hands, acutely reacts to external touch and bad smell. Such a person likes nature and cares for relatives and loved ones."
+
+msgid "ISTP_description_2"
+msgstr "2. The Craftsman is prudent and economical, inventive in daily life and at work which he likes. He is skeptical to slogans and appeals, relies only on common sense. He is stubborn and hard-edged in everything he thinks is right. He is mistrustful to new ideas but after verifying them in practice he can gain maximum benefit from them."
+
+msgid "ISTP_description_3"
+msgstr "3. The Craftsman is ambitious and independent, needs subtle treatment, praise and attention. Because of skepticism he is not able to see future prospects. Such a person worries about the timely choice of his way in life and feels dependent on fate."
+
+msgid "ISTP_description_4"
+msgstr "4. The Craftsman is impressionable and poorly controls his emotions during a debate. He cannot express his feelings in front of people. The hardships of life make him inclined to black humour. Sometimes he feels pessimism and apathy. Instead of cheering people up he gets influenced by their negative state."
+
+msgid "ISTP_description_5"
+msgstr "Your strong side is curiosity to the phenomena of your surroundings. You seek knowledge, travel willingly and do not limit yourself with only observations of life conditions, nature or architecture. You have a well developed aesthetic taste."
+
+msgid "ISTP_description_6"
+msgstr "The deep purpose of your individuality is a comfort - physical as well as in relationships. Bad manners, indelicacy and a lack of warmth from others deeply hurt you. You seek harmony, calmness and a healthy lifestyle."
+
+msgid "ISTP_description_7"
+msgstr "Another strong side is your business logic which helps you to rationally conduct business. In your actions you are guided only by common sense and a sense of real benefit."
+
+msgid "ISTP_description_8"
+msgstr "You prefer to avoid useless tasks but when interested in something you can be a hard worker and act distinctly, consistently and steadily. In these cases you think through all details in advance, prepare everything that's required and show enviable ingenuity, pragmatism and lightness."
+
+msgid "ISTP_description_9"
+msgstr "Your weak side is inability to express feelings to people which makes you look cold and indifferent to others.Inner strength inherent to you sometimes causes tantrums when you cannot hold your emotions, although you regret this after."
+
+msgid "ISTP_description_10"
+msgstr "Inner strength inherent to you sometimes causes tantrums when you cannot hold your emotions, although you regret this after."
+
+msgid "ISTP_description_11"
+msgstr "Because expression of feelings and emotions is hard for you, you prefer a joking manner of conversation to sentimentality. Because of that, you may sometimes be misunderstood. You prefer to live through failures silently. To avoid misunderstanding, try to trust your partner more and talk to him seriously."
+
+msgid "ISTP_description_12"
+msgstr ""
+"Another issue you have is significant amount of skepticism which also defines your pessimistic attitude to the future. You often surrender to melancholy and gloom and give up. Your apathy is often standing in the way of achieving more than your personal experience suggests. The recommendation is to travel more, change your habitual way of life at least in small things. New impressions will cause "
+"interest in learning history."
+
+msgid "ISTP_description_13"
+msgstr "Try finding the work you like which will fill your life with purpose and turn you towards the future. Keenness with work is the best solution for apathy and skepticism. Do not let melancholy take over. When it happens, meet with friends, go for a walk, to the movies or theatre. Spend more time with cheerful people who can charge you up with positive emotions."
+
+#
+# ISFP
+#
+msgid "ISFP_title"
+msgstr "Peacemaker (Duma, ISFP)"
+
+msgid "ISFP_description_1"
+msgstr "1. The Peacemaker is always friendly and pleasant while interacting with others, he respects amenities and the comfort of others. He is mindful and thoughtful towards his relatives. In a community he takes the \"middle way\", likes pretty items and coziness."
+
+msgid "ISFP_description_2"
+msgstr "2. The Peacemaker is emotional and sensitive, strives to cheer others up with jokes, hints and teasing. He is able to make arrangements in an informal atmosphere, wants to be at peace with everyone so he never steps into an argument or debates."
+
+msgid "ISFP_description_3"
+msgstr "3. The Peacemaker hides his problems from people, shows cheerfulness and optimism. He does everything at a convenient speed, never promises anything if he doubt that it can be fulfilled. This person avoids intrusive people who steal time."
+
+msgid "ISFP_description_4"
+msgstr "4. The Peacemaker works productively only for himself or people he is interested in. In other cases he never over-works, usually avoids high physical loads. His efficiency depends on his mood. This person usually avoids necessary work if it seems boring."
+
+msgid "ISFP_description_5"
+msgstr "Your strong side is the ability to find the job you enjoy, one that brings happiness, pleasure and good feelings. You are the one who can organize spare time and fun with relatives. The area of your creativity is delicious food, beautiful dishes, -interior decoration as well as creating a warm, relaxing atmosphere for communication. You know how to have fun in life and share it with others."
+
+msgid "ISFP_description_6"
+msgstr "You choose nature landscape over leisure. You are a peaceful, diplomatic person and are able to avoid controversy and conflicts."
+
+msgid "ISFP_description_7"
+msgstr "You are tolerant to others' shortcomings, are agreeable, and you do not like to put pressure on people. With your behaviour, you strive to bring out good emotions and feelings in others. You have a good sense of humor, and are cheerful and easy tempered. You are able to turn looming conflict into a laugh."
+
+msgid "ISFP_description_8"
+msgstr "Your main issue is an inability to be constantly efficient, to force yourself into doing boring, hard but necessary jobs. You do not like an official or formal atmosphere and prefer make arrangements privately, using trusted connections."
+
+msgid "ISFP_description_9"
+msgstr "Try to develop a more active life attitude, remember to do work before play."
+
+msgid "ISFP_description_10"
+msgstr "Think more about others' interests, help people with actions, not just advice, aim that your personal concerns coincide with social interests."
+
+msgid "ISFP_description_11"
+msgstr "Overcome laziness, do not be afraid to spend effort and time on community service and do not promise immediate benefit and return. Then others will treat you with respect for being reasonable and reliable."
+
+msgid "ISFP_description_12"
+msgstr "Another issue you have is poor foresight, an inability to correctly assess future prospects of today's undertakings. That is why you often take a pause and tend to consider only the close, guaranteed return. In such cases you risk to win in the small things while missing out on the big chances."
+
+msgid "ISFP_description_13"
+msgstr "On the other side, be careful with your promises and avoid wishful thinking. Do not overestimate the possible results of your current engagement, avoid over-promoting it, otherwise you may look like an unfounded, not serious person."
+
+msgid "ISFP_description_14"
+msgstr "Avoid excessive self-advertising, be consistent in your decisions, plan more and do not limit yourself with one sense and improvisation. Bring to finish, what has been started in order to not let others down."
+
+#
+# INTP
+#
+msgid "INTP_title"
+msgstr "Critic (Balzac, INTP)"
+
+msgid "INTP_description_1"
+msgstr "1. The Critic easily sees discrepancies and flaws in actions and words. He is sceptical about the future of hasty undertakings, can accurately characterise a person and predict their main reactions. He is ironic, patiently leads a person to desired steps, preparing this person in advance."
+
+msgid "INTP_description_2"
+msgstr "2. The Critic starts something new only when it promises something reliable return. He is thrifty, does the job distinctly, without a rush, pays attention to details. He plans everything trying to control the whole process. This person can use available information with benefit."
+
+msgid "INTP_description_3"
+msgstr "3. The Critic is prudent when it comes to health and comfort, does not accept rushed methods and sheer enthusiasm. In daily life he surrounds himself with favourite items, often he is a gourmand, follows hygiene standards and keeps cleanliness."
+
+msgid "INTP_description_4"
+msgstr "4. The Critic like to debate on various subjects, spoils his and others mood when excited or heated. This person does not control emotions well, his state fluctuates from melancholy depression to outbreaks of discontent. His issue is a lack of inner balance. He does not like to be withdrawn from the state of calmness and relaxation."
+
+msgid "INTP_description_5"
+msgstr "Your strong side is the anticipation of future events. You can predict the changing of a situation and give timely advice, warn about possible difficulties and troubles."
+
+msgid "INTP_description_6"
+msgstr "You have a good imagination and can remember in smallest details something seen or read once. You are curious and able to gather information related to the subject of your interest, you show significant erudition. You are cautious and prudent when making important decisions which allows others to treat you as a wise and farsighted person."
+
+msgid "INTP_description_7"
+msgstr "You possess an ability to create an environment with everything required for efficient work and rest. You value comfort and conveniences. You can motivate others for business activities required for achieving a higher level of life. Good planning abilities allow finding a lot of ways of reaching your goals."
+
+msgid "INTP_description_8"
+msgstr "Your main issue is unnecessary skepticism related to new ideas and undertakings which require a lot of energy and enthusiasm. This may lead to some conservatism and passiveness when it comes to actions."
+
+msgid "INTP_description_9"
+msgstr ""
+"You are inclined to have a pessimistic way of thinking and often avoid drastic solutions to existing problems. You value peace of mind and stability which is good in general but in critical situations you need to be more active. Overcome your indifference and tendency to observe from the side as these may lead to the loss of taste to life and negatively impact your business activities. Excessive "
+"grouchiness may cause complaints from others and even loss of their interest towards you. Develop the sense of tact, avoid inappropriate comments, try to make note of the value of others and praise them for their good qualities and actions."
+
+msgid "INTP_description_10"
+msgstr "You avoid scandals but sometimes let your negative emotions out. Remember that sudden and excessive outbursts of negative emotions may shock others and even put you into a ridiculous position."
+
+msgid "INTP_description_11"
+msgstr ""
+"Another issue you have is excessive scrupulosity and pedantry. You tend to understand every smallest detail and you are too detail oriented when doing a particular job. Such irrational waste of time and energy may lead to general overwork and even loss of interest in the job. You may even find yourself in front of a dilemma to drop the job. In such cases remember what caused this unwanted situation."
+
+msgid "INTP_description_12"
+msgstr "You show unreasonable demands to the quality and freshness of food and have deep-seated habits when it comes to taste and life. Pay more attention to advice related to variety of tastes, habits and opinions on lifestyle. Avoid stereotypes."
+
+msgid "INTP_description_13"
+msgstr "Because of susceptibility during a period of sickness you may abuse medicine and underestimate the importance of sports and fresh air. Seek a healthy lifestyle, balance pleasant physical and intellectual sensations."
+
+#
+# INFP
+#
+msgid "INFP_title"
+msgstr "Romantic (Yesenin, INFP)"
+
+msgid "INFP_description_1"
+msgstr "1. The Romantic is a dreamer. He is curious, interested in everything new, unusual and beautiful. He is persistent in requests when driven by a desire, he can find the right moment to talk to somebody, freely disposes of his and somebody else's time."
+
+msgid "INFP_description_2"
+msgstr "2. The Romantic is emotional and charming, smiles even when saying unpleasant things. He makes an impression with unexpected, sometimes extravagant actions and statements. He has a good sense of humour, he can comfort someone and cheer them up."
+
+msgid "INFP_description_3"
+msgstr "3. His appearance is his way of influencing people. If necessary The Romantic can dress elegant and even refined. When relaxed he complains about bad life and suffering. The Romantic likes to be looked after and enjoys when others listen to his complaints about bad health. It is difficult for him to refuse the comfort he is used to."
+
+msgid "INFP_description_4"
+msgstr "4. Without strong management The Romantic is disorganized. He is unable to concentrate on something for a long time. With finances he is inefficient and naughty, ready to spend last bit of money on something for his own satisfaction. He is inclined to give unreasonable promises, has fun only to avoid worrying about the future."
+
+msgid "INFP_description_5"
+msgstr "Your strong side is intuition which allows learning from the past to avoid mistakes in the future."
+
+msgid "INFP_description_6"
+msgstr "The future looks optimistic to you. You are a dreamer and romantic person, you like to see the beauty in life and art, your creative personality does not like greyness and standards. You bring elements of grace and distinction into each business."
+
+msgid "INFP_description_7"
+msgstr "You easily understand people's mood, have a good sense of humour and can use it to cheer up yourself and your loved ones. Your world is rich with emotions, feelings and depends a lot on the state of your mind. You are capable of sublime feelings and inclined to idealize people.You bring festivity and sublimity into the world."
+
+msgid "INFP_description_8"
+msgstr "Your main issue is an inability to constantly do day-to-day tasks which are not interesting and seem materialistic. You are not able to do savings, often cannot stand the desire to buy nice item which is over your budget. Try not to waste money on unnecessary baubles otherwise you may begin to struggle financially."
+
+msgid "INFP_description_9"
+msgstr "Try spending less to avoid humiliating situations when you need to find unusual ways to pay off your debts such as selling your items. Do not follow your ambitions for an easy life, do not give away ethics and morals trying to avoid daily troubles. Let your sincere feelings show the right choice between materialistic and spiritual aspects of life."
+
+msgid "INFP_description_10"
+msgstr "Another issue is your habit to hide worries and physical ailments from others. This can weary people and cause their mistrust in the sincerity of your worries."
+
+msgid "INFP_description_11"
+msgstr "Avoid unnecessary claims towards others and complaints about the lack of their care and attention. To earn the attention of those close to you, try moderating your flightiness."
+
+msgid "INFP_description_12"
+msgstr "Show more generosity and care towards others, try earning a positive attitude by work and active participation in community activities, never give empty promises. Avoid spending free time on useless dreams and talks. Spend most of your time on real business which can increase your chance to succeed."
+
+#
+# Profile
+#
+msgid "black_2"
+msgstr "black"
+
+msgid "black_3"
+msgstr "black"
+
+msgid "black_4"
+msgstr "black"
+
+msgid "blonde_2"
+msgstr "blonde"
+
+msgid "brown_2"
+msgstr "brown"
+
+msgid "brown_3"
+msgstr "brown"
+
+msgid "grey_2"
+msgstr "grey"
+
+msgid "none_2"
+msgstr "none"
+
+#
+# Why it works
+#
+msgid "Why_it_works_1"
+msgstr "We believe that relationships between people are predictable. To make the long story short, there are 16 different ways of how people can interact with the world."
+
+msgid "Why_it_works_2"
+msgstr "Depending on yours and your partner's way of communicating with others it's possible to tell what your relations will look like."
+
+msgid "Why_it_works_3"
+msgstr "It probably wouldn't matter much for a quick hangout. However if you are looking for a long-term relationship certain combinations are known to work better than others."
+
+msgid "Why_it_works_4"
+msgstr "There is one combination (for each type) that works best of all. That's the Best Match for you."
+
+msgid "Why_it_works_5"
+msgstr "Unlike other websites that use proprietary matching systems, our approach is based on research that is available to everyone who is interested to know more."
+
+#
+# Detailed
+#
+msgid "Detailed_1"
+msgstr "The original approach is based on Carl Jung’s Psychological Types theory."
+
+msgid "Detailed_2"
+msgstr "Each person’s character leans towards one or another characteristic in each pair (also called dichotomies)"
+
+msgid "Detailed_3"
+msgstr "Extraverted (E) – Introverted (I)"
+
+msgid "Detailed_4"
+msgstr "How we interact"
+
+msgid "Detailed_5"
+msgstr "Sensing (S) – Intuitive (N)"
+
+msgid "Detailed_6"
+msgstr "How we get information "
+
+msgid "Detailed_7"
+msgstr "Thinking (T) – Feeling (F)"
+
+msgid "Detailed_8"
+msgstr "How we make decisions"
+
+msgid "Detailed_9"
+msgstr "Judging (J) – Perceptive (P)"
+
+msgid "Detailed_10"
+msgstr "If we prefer collect information or make decisions "
+
+msgid "Detailed_11"
+msgstr "Extraverted (E) – Introverted (I)"
+
+msgid "Detailed_12"
+msgstr "Aka. Extratim – Introtim"
+
+msgid "Detailed_13"
+msgstr "These characteristics describe the way we interact with the outside world and where we direct our energy."
+
+msgid "Detailed_14"
+msgstr "Extroverts prefer to interact with the outside world."
+
+msgid "Detailed_15"
+msgstr "Introverts prefer to interact with their own internal world. "
+
+msgid "Detailed_16"
+msgstr "Extraverted types"
+
+msgid "Detailed_17"
+msgstr "Introverted types "
+
+msgid "Detailed_18"
+msgstr "Direct more energy to outside. "
+
+msgid "Detailed_19"
+msgstr "Focus on surroundings."
+
+msgid "Detailed_20"
+msgstr "Direct more energy to inside. "
+
+msgid "Detailed_21"
+msgstr "Focus on their own feelings and thoughts. "
+
+msgid "Detailed_22"
+msgstr "Higher energy in a large group of people."
+
+msgid "Detailed_23"
+msgstr "Lower energy when alone."
+
+msgid "Detailed_24"
+msgstr "Prefer to work in a team."
+
+msgid "Detailed_25"
+msgstr "Lower energy in a large group of people."
+
+msgid "Detailed_26"
+msgstr "Higher energy when alone."
+
+msgid "Detailed_27"
+msgstr "Prefer to work alone."
+
+msgid "Detailed_28"
+msgstr "Generally more active."
+
+msgid "Detailed_29"
+msgstr "Often have many friends. Easily make new friends."
+
+msgid "Detailed_30"
+msgstr "Generally more passive."
+
+msgid "Detailed_31"
+msgstr "Often have only a few friends. "
+
+msgid "Detailed_32"
+msgstr "There is a common misconception that extraverted persons are “socially outgoing” while introverted persons are “socially reserved”. That is not true all the time. Introverts may also be very sociable in a known company where all relations between individuals are clear."
+
+msgid "Detailed_33"
+msgstr "What is more important in this case is if a person takes initiative in establishing the social interaction or prefers to let others do that."
+
+msgid "Detailed_34"
+msgstr "Sensing (S) – Intuitive (N)"
+
+msgid "Detailed_35"
+msgstr "These characteristics describe the way we get information about the outside world."
+
+msgid "Detailed_36"
+msgstr "Sensing focuses on details that can be directly experienced."
+
+msgid "Detailed_37"
+msgstr "Intuition focuses on perception rather than specific details."
+
+msgid "Detailed_38"
+msgstr "Sensing types"
+
+msgid "Detailed_39"
+msgstr "Intuitive types"
+
+msgid "Detailed_40"
+msgstr "More realistic."
+
+msgid "Detailed_41"
+msgstr "Pay more attention to details."
+
+msgid "Detailed_42"
+msgstr "More focused on surroundings."
+
+msgid "Detailed_43"
+msgstr "More interested in practice."
+
+msgid "Detailed_44"
+msgstr "More focused on “what it is”."
+
+msgid "Detailed_45"
+msgstr "More “head-in-the-clouds”."
+
+msgid "Detailed_46"
+msgstr "See the big picture."
+
+msgid "Detailed_47"
+msgstr "More focused on ideas."
+
+msgid "Detailed_48"
+msgstr "More interested in theory."
+
+msgid "Detailed_49"
+msgstr "More focused on “what it means”. "
+
+msgid "Detailed_50"
+msgstr "Thinking (T) – Feeling (F)"
+
+msgid "Detailed_51"
+msgstr "These characteristics describe the way we decide and make conclusions."
+
+msgid "Detailed_52"
+msgstr "Feeling types focus on emotional experience and human relationships."
+
+msgid "Detailed_53"
+msgstr "Thinking types focus on logical relationships and objective truth."
+
+msgid "Detailed_54"
+msgstr "Feeling types"
+
+msgid "Detailed_55"
+msgstr "Thinking types"
+
+msgid "Detailed_56"
+msgstr "Make decisions based on their feelings."
+
+msgid "Detailed_57"
+msgstr "How something has been said is more important."
+
+msgid "Detailed_58"
+msgstr "Prefer to think “good or bad”."
+
+msgid "Detailed_59"
+msgstr "Better at solving interpersonal problems."
+
+msgid "Detailed_60"
+msgstr "Prefer persuasion."
+
+msgid "Detailed_61"
+msgstr "Make decisions based on logic."
+
+msgid "Detailed_62"
+msgstr "What has been said is more important."
+
+msgid "Detailed_63"
+msgstr "Prefer to think “right or wrong”."
+
+msgid "Detailed_64"
+msgstr "Interested in structures and patterns."
+
+msgid "Detailed_65"
+msgstr "Prefer argumentation."
+
+msgid "Detailed_66"
+msgstr "Judging (J) – Perceptive (P)"
+
+msgid "Detailed_67"
+msgstr "Every human being does two things: collects information about the outside world and makes decisions based on this information. The way we collect information is characterized by Sensing-Intuition. The way we make decisions is described by the Thinking-Feeling pair."
+
+msgid "Detailed_68"
+msgstr "Judging-Perception dichotomy describes what we prefer to do – collect information (perception) or make decisions (judging). "
+
+msgid "Detailed_69"
+msgstr "Judging types"
+
+msgid "Detailed_70"
+msgstr "Perceptive types "
+
+msgid "Detailed_71"
+msgstr "Plan ahead, make decisions earlier."
+
+msgid "Detailed_72"
+msgstr "More conservative."
+
+msgid "Detailed_73"
+msgstr "Don’t like to change their decisions."
+
+msgid "Detailed_74"
+msgstr "Tend to finish what they started."
+
+msgid "Detailed_75"
+msgstr "Low stress tolerance."
+
+msgid "Detailed_76"
+msgstr "More spontaneous, tend to wait and see."
+
+msgid "Detailed_77"
+msgstr "More flexible and tolerant."
+
+msgid "Detailed_78"
+msgstr "Frequently change their decisions."
+
+msgid "Detailed_79"
+msgstr "Tend to start new things without finishing them."
+
+msgid "Detailed_80"
+msgstr "High stress tolerance. "
+
+msgid "Detailed_81"
+msgstr "It’s never one OR another but rather one MORE than another. While the actual ratio can be changing during the life course,"
+
+msgid "Detailed_82"
+msgstr "the fact that a person is for example more extraverted than introverted is genetically predetermined."
+
+msgid "Detailed_83"
+msgstr "Based on that, the Lithuanian researcher Ausra Augustinaviciute described 16 types of personality (also called sociotypes) – different combinations of each of Jung’s characteristics."
+
+msgid "Detailed_84"
+msgstr "16 sociotypes"
+
+msgid "Detailed_85"
+msgstr "Formal name"
+
+msgid "Detailed_86"
+msgstr "Socionics 4-letter code"
+
+msgid "Detailed_87"
+msgstr "Type alias"
+
+msgid "Detailed_88"
+msgstr "Logical Sensory Extrovert (LSE)"
+
+msgid "Detailed_89"
+msgstr "ESTj, The Administrator"
+
+msgid "Detailed_90"
+msgstr "Stierlitz"
+
+msgid "Detailed_91"
+msgstr "Logical Intuitive Extrovert (LIE)"
+
+msgid "Detailed_92"
+msgstr "ENTj, The Entrepreneur"
+
+msgid "Detailed_93"
+msgstr "Jack London"
+
+msgid "Detailed_94"
+msgstr "Ethical Sensory Extrovert (ESE)"
+
+msgid "Detailed_95"
+msgstr "ESFj, The Enthusiast"
+
+msgid "Detailed_96"
+msgstr "Hugo"
+
+msgid "Detailed_97"
+msgstr "Ethical Intuitive Extrovert (EIE)"
+
+msgid "Detailed_98"
+msgstr "ENFj, The Mentor"
+
+msgid "Detailed_99"
+msgstr "Hamlet"
+
+msgid "Detailed_100"
+msgstr "Sensory Logical Extrovert (SLE)"
+
+msgid "Detailed_101"
+msgstr "ESTp, The Conqueror"
+
+msgid "Detailed_102"
+msgstr "Zhukov"
+
+msgid "Detailed_103"
+msgstr "Sensory Ethical Extrovert (SEE)"
+
+msgid "Detailed_104"
+msgstr "ESFp, The Politician"
+
+msgid "Detailed_105"
+msgstr "Napoleon"
+
+msgid "Detailed_106"
+msgstr "Intuitive Logical Extrovert (ILE)"
+
+msgid "Detailed_107"
+msgstr "ENTp, The Seeker"
+
+msgid "Detailed_108"
+msgstr "Don Quixote"
+
+msgid "Detailed_109"
+msgstr "Intuitive Ethical Extrovert (IEE)"
+
+msgid "Detailed_110"
+msgstr "ENFp, The Advisor"
+
+msgid "Detailed_111"
+msgstr "Huxley"
+
+msgid "Detailed_112"
+msgstr "Logical Sensory Introvert (LSI)"
+
+msgid "Detailed_113"
+msgstr "ISTj, The Inspector"
+
+msgid "Detailed_114"
+msgstr "Maxim Gorky"
+
+msgid "Detailed_115"
+msgstr "Logical Intuitive Introvert (LII)"
+
+msgid "Detailed_116"
+msgstr "INTj, The Analyst"
+
+msgid "Detailed_117"
+msgstr "Robespierre"
+
+msgid "Detailed_118"
+msgstr "Ethical Sensory Introvert (ESI)"
+
+msgid "Detailed_119"
+msgstr "ISFj, The Guardian"
+
+msgid "Detailed_120"
+msgstr "Dreiser"
+
+msgid "Detailed_121"
+msgstr "Ethical Intuitive Introvert (EII)"
+
+msgid "Detailed_122"
+msgstr "INFj, The Humanist"
+
+msgid "Detailed_123"
+msgstr "Dostoyevsky"
+
+msgid "Detailed_124"
+msgstr "Sensory Logical Introvert (SLI)"
+
+msgid "Detailed_125"
+msgstr "ISTp, The Craftsman"
+
+msgid "Detailed_126"
+msgstr "Gabin"
+
+msgid "Detailed_127"
+msgstr "Sensory Ethical Introvert (SEI)"
+
+msgid "Detailed_128"
+msgstr "ISFp, The Peacemaker"
+
+msgid "Detailed_129"
+msgstr "Dumas"
+
+msgid "Detailed_130"
+msgstr "Intuitive Logical Introvert (ILI)"
+
+msgid "Detailed_131"
+msgstr "INTp, The Critic"
+
+msgid "Detailed_132"
+msgstr "Balzac"
+
+msgid "Detailed_133"
+msgstr "Intuitive Ethical Introvert (IEI)"
+
+msgid "Detailed_134"
+msgstr "INFp, The Romantic"
+
+msgid "Detailed_135"
+msgstr "Yesenin"
+
+msgid "Detailed_136"
+msgstr "You can think of each personality type as a certain way of communicating with others. Depending on personality types of the persons interacting with each other"
+
+msgid "Detailed_137"
+msgstr "their relationship will have certain characteristics."
+
+msgid "Detailed_138"
+msgstr "Ausra Augustinaviciute described 14 possible types of communications between different personality types (also called Intertype relations)."
+
+msgid "Detailed_139"
+msgstr "Intertype relations"
+
+msgid "Detailed_140"
+msgstr "The intertype relations are easier to remember by looking at dichotomies."
+
+msgid "Detailed_141"
+msgstr "Depending on which types we are talking about, same dichotomy combinations may mean different relations. Therefore in the table below you’ll see 20 relations, while in fact there are only 14 and the 6 additional are only variations."
+
+msgid "Detailed_142"
+msgstr "Depending on the relations you have with a person – work, friendship or intimacy certain intertype relations work better than others."
+
+msgid "Detailed_143"
+msgstr "For friendship and intimacy, Duality relations are known to be the best."
+
+msgid "Detailed_144"
+msgstr "Of course this is not the only factor that matters, however it’s a basis for building strong long-term relations that satisfy both partners."
+
+msgid "Detailed_145"
+msgstr "The main reason why the personality type match is one of defining factors is that it’s predetermined as it was mentioned earlier and does not change much over time."
+
+msgid "Detailed_146"
+msgstr "Other things like hobbies, habits, appearance etc. are important as well. They however may change over time and at the end of the day may not matter at all if both partners feel very comfortable and relaxed while being together."
+
+msgid "Detailed_147"
+msgstr "That’s what Duality relations are about. In Duality relations you will be easily able to go along with each other for a long time and will never be bored of each other (Disclaimer)"
+
+msgid "Detailed_148"
+msgstr "Dual relations"
+
+msgid "Detailed_149"
+msgstr "Dual relations are characterized by mutual benefit and support, and are generally viewed as optimal for friendship, intimacy, and marriage (though the sociotype is not the only factor influencing this)."
+
+msgid "Detailed_150"
+msgstr "Duality interaction is generally rewarding and satisfying for both parties, providing inspiration and support. Duality is a central theme of the philosophy of the socionics study: Augusta often stated her view that a person who is estranged from contact with a dual partner must cope by unnaturally distorting their personality, a phenomenon called “type masking”."
+
+msgid "Detailed_151"
+msgstr "Differences"
+
+msgid "Detailed_152"
+msgstr "How is this approach different from MBTI (Myers-Briggs Type Indicator) and other systems based on it?"
+
+msgid "Detailed_153"
+msgstr "While MBTI has also been developed based on Jung’s work, it not only uses different types of terminologies and codes like INTj/INTp etc. It also uses function theory that is mutually exclusive with our approach. For example Thinking – Felling description in BMTI is not the same as what’s used to define sociotypes. Furthermore Jung doesn’t describe Thinking – Felling dichotomy as it’s used in MBTI."
+
+msgid "Detailed_154"
+msgstr "Therefore the 16 MBTI types are not the same as the 16 sociotypes. By description, certain MBTI types correspond to several sociotypes each and vice versa."
+
+#
+# Relations
+#
+msgid "ac_1"
+msgstr "Activation"
+
+msgid "ac_2"
+msgstr "Mutual assistance, similar interests and goals. Different approaches."
+
+msgid "ac_3"
+msgstr "Have understanding and communication but complicated cooperation."
+
+msgid "ac_4"
+msgstr "Friendship: good"
+
+msgid "ac_5"
+msgstr "Romance: good with a requirement for periodical separation"
+
+msgid "ac_6"
+msgstr "Easy to start relations"
+
+msgid "ac_7"
+msgstr "Not very good communication"
+
+msgid "ac_8"
+msgstr "Rare conflicts"
+
+msgid "ac_9"
+msgstr "Mutual mobilization and stimulation"
+
+msgid "ac_10"
+msgstr "Disputes and mutual frustration over time"
+
+msgid "cg_1"
+msgstr "Congenerity"
+
+msgid "cg_2"
+msgstr "Good for common interests, complicated at closer distance."
+
+msgid "cg_3"
+msgstr "Good understanding of each other.s motives but different approaches to dealing with problems"
+
+msgid "cg_4"
+msgstr "Friendship: good when work and cooperation are not expected"
+
+msgid "cg_5"
+msgstr "Romance: fair with enough autonomy for each other"
+
+msgid "cg_6"
+msgstr "Usually similar goals with different details"
+
+msgid "cg_7"
+msgstr "Frequent  frustration because of lack of assistance from each other"
+
+msgid "cg_8"
+msgstr "Possible competition for influence in the same group"
+
+msgid "cg_9"
+msgstr "Exhaustion over time"
+
+msgid "du_1"
+msgstr "Duality"
+
+msgid "du_2"
+msgstr "Ideal fit. Mutual benefit and support"
+
+msgid "du_3"
+msgstr "Strong sides of one partner are weak sides of the other one and vice versa. Ability to better interact with the outside world as a couple."
+
+msgid "du_4"
+msgstr "Friendship: ideal"
+
+msgid "du_5"
+msgstr "Romance: ideal"
+
+msgid "du_6"
+msgstr "Comfort in relations"
+
+msgid "du_7"
+msgstr "Partners are never tired of  each other"
+
+msgid "du_8"
+msgstr "Feeling that the partner can offer support when it.s needed"
+
+msgid "du_9"
+msgstr "Ability to follow natural desires and develop individuality in relations"
+
+msgid "id_1"
+msgstr "Identity"
+
+msgid "id_2"
+msgstr "Easy communication and understanding. Inability to help each other"
+
+msgid "id_3"
+msgstr "Partners tend to agree and sympathize with each other. Relations fade without a common goal or interests."
+
+msgid "id_4"
+msgstr "Friendship: good"
+
+msgid "id_5"
+msgstr "Romance: recommended only if partners want to devote their lives to a common goal (ex. Pierre and Marie Curie)"
+
+msgid "id_6"
+msgstr "Easily relate and get to know each other"
+
+msgid "id_7"
+msgstr "Sympathy and understanding"
+
+msgid "id_8"
+msgstr "Shared interests and inspiration"
+
+msgid "id_9"
+msgstr "Difficult cooperation, partners tend to take responsibility for the same areas"
+
+msgid "id_10"
+msgstr "Decreasing interest in each other over time"
+
+msgid "mr_1"
+msgstr "Mirror"
+
+msgid "mr_2"
+msgstr "Inspiration, common interests, understanding. Differences in thought process and methodology"
+
+msgid "mr_3"
+msgstr "Sympathy, ability to learn from each other. Lack of warmth in relationship."
+
+msgid "mr_4"
+msgstr "Friendship: good"
+
+msgid "mr_5"
+msgstr "Romance: good with independence and ability to set agreements"
+
+msgid "mr_6"
+msgstr "Sympathy and understanding"
+
+msgid "mr_7"
+msgstr "Shared interests and inspiration"
+
+msgid "mr_8"
+msgstr "Constant interest in each other"
+
+msgid "mr_9"
+msgstr "Inability to resolve or remove all differences"
+
+msgid "mr_10"
+msgstr "Sense of emptiness and disappointment in relations over time"
+
+msgid "rqm_1"
+msgstr "Request-"
+
+msgid "rqm_2"
+msgstr "You agree and grow close, then disagree and come apart."
+
+msgid "rqm_3"
+msgstr "You cannot live without each other but are unable to be together."
+
+msgid "rqm_4"
+msgstr "Friendship: acceptable if not failing each other.s trust"
+
+msgid "rqm_5"
+msgstr "Romance: acceptable if not working in isolation"
+
+msgid "rqm_6"
+msgstr "You feel the urge to protect and patronize partner"
+
+msgid "rqm_7"
+msgstr "It feels like your partner is trying to re-educate you"
+
+msgid "rqm_8"
+msgstr "You do not understand what your partner wants"
+
+msgid "rqm_9"
+msgstr "You partially accomplish the required work"
+
+msgid "rqm_10"
+msgstr "Over time - more arguments and fights"
+
+msgid "rqm_11"
+msgstr "Your partner over-dramatizes the situation"
+
+msgid "rqm_12"
+msgstr "Tiredness and loss of interest in partner over time"
+
+msgid "sd_1"
+msgstr "Semi-duality"
+
+msgid "sd_2"
+msgstr "Agreement and great interest in each other. Lack of coordination in joint work."
+
+msgid "sd_3"
+msgstr "Partners are attracted to one another but are unable to fully support each other. In certain areas both partners are failing."
+
+msgid "sd_4"
+msgstr "Friendship: good"
+
+msgid "sd_5"
+msgstr "Romance: good with patience and ability to compromise"
+
+msgid "sd_6"
+msgstr "Inability to stay angry with  each other too long"
+
+msgid "sd_7"
+msgstr "Rarely tired of each other"
+
+msgid "sd_8"
+msgstr "Ability to plan together"
+
+msgid "sd_9"
+msgstr "Sudden losses in understanding"
+
+msgid "sd_10"
+msgstr "Difficulties when it comes to realization of what.s planned"
+
+msgid "svm_1"
+msgstr "Supervision-"
+
+msgid "svm_2"
+msgstr "Relations of social control and audit."
+
+msgid "svm_3"
+msgstr "Often conflicting relations when the person is vulnerable and is unable to defend themselves."
+
+msgid "svm_4"
+msgstr "Friendship: fair when not commenting on partner.s weak points"
+
+msgid "svm_5"
+msgstr "Romance: fair without a critical attitude towards each other"
+
+msgid "svm_6"
+msgstr "You often feel frustrated with your partner.s statements"
+
+msgid "svm_7"
+msgstr "You feel like you never meet  your partner.s expectations"
+
+msgid "svm_8"
+msgstr "You are rarely appreciated"
+
+msgid "svm_9"
+msgstr "You partner is convinced that they are  always right"
+
+msgid "svm_10"
+msgstr "You feel discomfort but are not able to discuss that with your partner"
+
+msgid "cf_1"
+msgstr "Conflict"
+
+msgid "cf_2"
+msgstr "Most difficult relations."
+
+msgid "cf_3"
+msgstr "Partners try to impose their own views on each other and do not accept the value of the other."
+
+msgid "cf_4"
+msgstr "Friendship: possible for self-discovery, require psychological distance"
+
+msgid "cf_5"
+msgstr "Romance: bad"
+
+msgid "cf_6"
+msgstr "Exaggeration of slightest flaws in each other"
+
+msgid "cf_7"
+msgstr "Frequent  arguments and disagreement"
+
+msgid "cf_8"
+msgstr "Mutual irritation and misunderstanding"
+
+msgid "cf_9"
+msgstr "Sympathy and some admiration at the beginning"
+
+msgid "cf_10"
+msgstr "Require a lot of carefulness and tolerance"
+
+msgid "cp_1"
+msgstr "Cooperation"
+
+msgid "cp_2"
+msgstr "Smooth and calm, business-like relations but pragmatic and competitive."
+
+msgid "cp_3"
+msgstr "Cooperation and partnership with possible conflicts of interest."
+
+msgid "cp_4"
+msgstr "Friendship: very good for achieving common short-term goals"
+
+msgid "cp_5"
+msgstr "Romance: very good when one partner is recognized as a leader"
+
+msgid "cp_6"
+msgstr "Work well while working on common goal"
+
+msgid "cp_7"
+msgstr "Future actions must be performed separately"
+
+msgid "cp_8"
+msgstr "Tiredness and increase of competitive element over time"
+
+msgid "cp_9"
+msgstr "Similar views and methods"
+
+msgid "cp_10"
+msgstr "Easy to compromise"
+
+msgid "ex_1"
+msgstr "Extinguishment"
+
+msgid "ex_2"
+msgstr "Interest in the same things, low mutual understanding."
+
+msgid "ex_3"
+msgstr "Hard to maintain stable and organized relations."
+
+msgid "ex_4"
+msgstr "Friendship: acceptable with communication in narrow circle of friends."
+
+msgid "ex_5"
+msgstr "Romance: acceptable with communication in narrow circle of friends."
+
+msgid "ex_6"
+msgstr "Partner can help critically evaluate something"
+
+msgid "ex_7"
+msgstr "Difficult and slow collaboration, requires a strict route"
+
+msgid "ex_8"
+msgstr "Frequent arguments about details"
+
+msgid "ex_9"
+msgstr "Opposite views on the same subjects"
+
+msgid "me_1"
+msgstr "Mirage"
+
+msgid "me_2"
+msgstr "Support and assistance but lack of understanding and inability to cooperate."
+
+msgid "me_3"
+msgstr "Comfortable relations with lack of emotional contrast and sincerity."
+
+msgid "me_4"
+msgstr "Friendship: good for not serious activities."
+
+msgid "me_5"
+msgstr "Romance: good with mutual attention to each other"
+
+msgid "me_6"
+msgstr "Rare disputes usually end with compromise"
+
+msgid "me_7"
+msgstr "Partners admire but rarely understand each other"
+
+msgid "me_8"
+msgstr "Pleasant company but lack of reliability for serious projects"
+
+msgid "me_9"
+msgstr "Learn to overcome persistent desire to remake partner"
+
+msgid "qi_1"
+msgstr "Quasi-identity"
+
+msgid "qi_2"
+msgstr "Good understanding and similar interests. Differences in opinions"
+
+msgid "qi_3"
+msgstr "Excitement with the strong sides of each other. Not a very strong relationship."
+
+msgid "qi_4"
+msgstr "Friendship: good"
+
+msgid "qi_5"
+msgstr "Romance: fair with tolerance, optimism and sense of humor"
+
+msgid "qi_6"
+msgstr "Common topics"
+
+msgid "qi_7"
+msgstr "Plenty of minor arguments"
+
+msgid "qi_8"
+msgstr "Often inability to meet each other.s expectations"
+
+msgid "qi_9"
+msgstr "Partners tend to feel underappreciated over time"
+
+msgid "rqp_1"
+msgstr "Request+"
+
+msgid "rqp_2"
+msgstr "You agree and grow close, then disagree and come apart."
+
+msgid "rqp_3"
+msgstr "You cannot live without each other but are unable to be together."
+
+msgid "rqp_4"
+msgstr "Friendship: acceptable if not failing each other.s trust"
+
+msgid "rqp_5"
+msgstr "Romance: acceptable if not working in isolation"
+
+msgid "rqp_6"
+msgstr "You feel activation when together"
+
+msgid "rqp_7"
+msgstr "It.s difficult to refuse your partner"
+
+msgid "rqp_8"
+msgstr "You admire your partner"
+
+msgid "rqp_9"
+msgstr "You feel the urge to help"
+
+msgid "rqp_10"
+msgstr "You are trying to reach an understanding"
+
+msgid "rqp_11"
+msgstr "You feel that your interests are not being considered"
+
+msgid "rqp_12"
+msgstr "You think you have a good understanding of partner.s needs"
+
+msgid "rqp_13"
+msgstr "Your partner is dismissive of your arguments and conclusions"
+
+msgid "rqp_14"
+msgstr "Over time - more arguments and an urge to distance"
+
+msgid "se_1"
+msgstr "Super-ego"
+
+msgid "se_2"
+msgstr "Relations pleasant at a distance, competitive when closer."
+
+msgid "se_3"
+msgstr "Difficulties in understanding, imbalanced relations that lead to loss of trust."
+
+msgid "se_4"
+msgstr "Friendship: acceptable with efforts to keep mutually-beneficial exchanges."
+
+msgid "se_5"
+msgstr "Romance: acceptable when partners show care for each other."
+
+msgid "se_6"
+msgstr "Mutual competition"
+
+msgid "se_7"
+msgstr "Frustration and lack of understanding"
+
+msgid "se_8"
+msgstr "Small differences must be resolved with minor compromises"
+
+msgid "se_9"
+msgstr "Lack of support"
+
+msgid "se_10"
+msgstr "Need for rest from each other"
+
+msgid "se_11"
+msgstr "Different interests"
+
+msgid "se_12"
+msgstr "Each partner is often feeling that the other.s intention is to upset them"
+
+msgid "svp_1"
+msgstr "Supervision+"
+
+msgid "svp_2"
+msgstr "Relations of social control and audit."
+
+msgid "svp_3"
+msgstr "Often conflicting relations when the person is vulnerable and is unable to defend themselves."
+
+msgid "svp_4"
+msgstr "Friendship: fair when not commenting on partner.s weak points"
+
+msgid "svp_5"
+msgstr "Romance: fair without a critical attitude towards each other"
+
+msgid "svp_6"
+msgstr "You are usually interested in what your partner does and says"
+
+msgid "svp_7"
+msgstr "You feel your partner is often overreacting"
+
+msgid "svp_8"
+msgstr "You feel your partner is slow and passive"
+
+msgid "svp_9"
+msgstr "You want to help your partner and teach them something"

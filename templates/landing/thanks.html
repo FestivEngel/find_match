@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FindMatch - Thank you</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
+        function toggleDisplay(el)
+        {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+    <style type="text/css">
+        html { background: #999; }
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 { font-size: 24px; }
+        h2 { font-size: 20px; }
+        h3 { font-size: 16px; }
+        h4 { font-size: 14px; }
+        h5 { font-size: 12px; }
+        h6 { font-size: 12px; font-style: italic;}
+
+
+        .break {
+            clear: both;
+        }
+
+        a img { border: none; }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover { color: #fff; }
+        #previewToolbar a.active { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br />
+
+        <form action="javascript:void(null)" method="post" onsubmit="return false;">
+            <input type="hidden" id="sociotype"
+                   value="{% if sociotype == 'ESTJ' %}{% trans "ESTJ_title" %}{% elseif sociotype == 'ENTJ' %}{% trans "ENTJ_title" %}{% elseif sociotype == 'ESFJ' %}{% trans "ESFJ_title" %}{% elseif sociotype == 'ENFJ' %}{% trans "ENFJ_title" %}{% elseif sociotype == 'ESTP' %}{% trans "ESTP_title" %}{% elseif sociotype == 'ESFP' %}{% trans "ESFP_title" %}{% elseif sociotype == 'ENTP' %}{% trans "ENTP_title" %}{% elseif sociotype == 'ENFP' %}{% trans "ENFP_title" %}{% elseif sociotype == 'ISTJ' %}{% trans "ISTJ_title" %}{% elseif sociotype == 'INTJ' %}{% trans "INTJ_title" %}{% elseif sociotype == 'ISFJ' %}{% trans "ISFJ_title" %}{% elseif sociotype == 'INFJ' %}{% trans "INFJ_title" %}{% elseif sociotype == 'ISTP' %}{% trans "ISTP_title" %}{% elseif sociotype == 'ISFP' %}{% trans "ISFP_title" %}{% elseif sociotype == 'INTP' %}{% trans "INTP_title" %}{% elseif sociotype == 'INFP' %}{% trans "INFP_title" %}{% endif %}">
+        </form>
+
+        <p style="text-align:center;"><strong>{% trans "Dear" %}, {{ nickname }}. {% trans "Thank you" %}!</strong></p>
+        <p style="text-align:center;"><strong>{% trans "Coming soon in 2016" %}</strong></p>
+
+        <p style="text-align:center;"><strong>{% trans "Find your best Match" %}</strong><br />
+            <a href="/howitworks">{% trans "How it works" %}</a><br />
+            {% trans "Please, go to" %} <a href="/about">{% trans "About" %}</a> {% trans "section for more information" %}.</p>
+
+
+        {% if need2TakeTest %}
+        <p>{% trans "Take the test" %} <a href="/instructions">{% trans "here" %}</a></p>
+        {% else %}
+        <p>{% trans "Your personality type is" %}
+            {% if sociotype == 'ESTJ' %}
+            {% trans "ESTJ_title" %}
+            {% elseif sociotype == 'ENTJ' %}
+            {% trans "ENTJ_title" %}
+            {% elseif sociotype == 'ESFJ' %}
+            {% trans "ESFJ_title" %}
+            {% elseif sociotype == 'ENFJ' %}
+            {% trans "ENFJ_title" %}
+            {% elseif sociotype == 'ESTP' %}
+            {% trans "ESTP_title" %}
+            {% elseif sociotype == 'ESFP' %}
+            {% trans "ESFP_title" %}
+            {% elseif sociotype == 'ENTP' %}
+            {% trans "ENTP_title" %}
+            {% elseif sociotype == 'ENFP' %}
+            {% trans "ENFP_title" %}
+            {% elseif sociotype == 'ISTJ' %}
+            {% trans "ISTJ_title" %}
+            {% elseif sociotype == 'INTJ' %}
+            {% trans "INTJ_title" %}
+            {% elseif sociotype == 'ISFJ' %}
+            {% trans "ISFJ_title" %}
+            {% elseif sociotype == 'INFJ' %}
+            {% trans "INFJ_title" %}
+            {% elseif sociotype == 'ISTP' %}
+            {% trans "ISTP_title" %}
+            {% elseif sociotype == 'ISFP' %}
+            {% trans "ISFP_title" %}
+            {% elseif sociotype == 'INTP' %}
+            {% trans "INTP_title" %}
+            {% elseif sociotype == 'INFP' %}
+            {% trans "INFP_title" %}
+            {% endif %}
+        </p>
+        <p>{% trans "You can retake the test" %} <a href="/instructions">{% trans "here" %}</a></p>
+
+	<p>{% trans "Share your type in social networks" %} :</p>
+        <p><script type="text/javascript">
+            document.write(VK.Share.button({
+                url: '{{ url }}',
+                title: 'Find Match Online',
+                description: 'My personality type is '.concat($('#sociotype').val()),
+                //image: 'http://mysite.com/mypic.jpg',
+                noparse: true
+            }));
+        </script></p>
+
+        <p><div class="fb-share-button" data-href="http://test.find-match.online" data-layout="button_count" data-mobile-iframe="true"></div></p>
+
+        <p><div class="g-plus" data-action="share"></div></p>
+        {% endif %}
+
+        {% if not loggedIn %}
+        <p style="text-align:center;"><a href="#">{% trans "Register" %}</a> {% trans "to receive 3 month of free membership any time after launch" %} </p>
+        {% endif %}
+
+        <p style="text-align:center;"><a href="/invite">{% trans "Determine relations with somebody you know" %}</a></p>
+
+        {% if not need2TakeTest %}
+        <p style="text-align:center;">{% trans "Show your" %} <a href="/relations">{% trans "Relations" %}</a> {% trans "with other sociotypes" %}</p>
+        {% endif %}
+
+    </div>
+    <div class="break"></div>
+</div>
+</body>
+<script src="/js/main.js"></script>
+</html>

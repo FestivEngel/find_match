@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FindMatch - Detailed explanation</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function toggleDisplay(el)
+        {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+    <style type="text/css">
+        html { background: #999; }
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 { font-size: 24px; }
+        h2 { font-size: 20px; }
+        h3 { font-size: 16px; }
+        h4 { font-size: 14px; }
+        h5 { font-size: 12px; }
+        h6 { font-size: 12px; font-style: italic;}
+
+
+        .break {
+            clear: both;
+        }
+
+        a img { border: none; }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover { color: #fff; }
+        #previewToolbar a.active { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br/>
+
+        <h1>{% trans "Detailed explanation" %}</h1>
+
+        <p>{% trans "Detailed_1" %}</p>
+
+        <p>{% trans "Detailed_2" %}:
+        <table>
+            <tr>
+                <td> {% trans "Detailed_3" %} </td>
+                <td> {% trans "Detailed_4" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_5" %} </td>
+                <td> {% trans "Detailed_6" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_7" %} </td>
+                <td> {% trans "Detailed_8" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_9" %} </td>
+                <td> {% trans "Detailed_10" %} </td>
+            </tr>
+        </table></p>
+
+        <h2>{% trans "Detailed_11" %}</h2>
+
+        <p>{% trans "Detailed_12" %}</p>
+
+        <p>{% trans "Detailed_13" %}<br />
+            {% trans "Detailed_14" %}<br />
+            {% trans "Detailed_15" %}
+        <table>
+            <tr>
+                <td> <strong>{% trans "Detailed_16" %}</strong> </td>
+                <td> <strong>{% trans "Detailed_17" %}</strong> </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_18" %} <br />
+                    {% trans "Detailed_19" %} </td>
+                <td> {% trans "Detailed_20" %} <br />
+                    {% trans "Detailed_21" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_22" %}<br />
+                    {% trans "Detailed_23" %}<br />
+                    {% trans "Detailed_24" %}</td>
+                <td> {% trans "Detailed_25" %}<br />
+                    {% trans "Detailed_26" %}<br />
+                    {% trans "Detailed_27" %}</td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_28" %}<br />
+                    {% trans "Detailed_29" %}</td>
+                <td> {% trans "Detailed_30" %}<br />
+                    {% trans "Detailed_31" %}</td>
+            </tr>
+        </table></p>
+
+        <p>{% trans "Detailed_32" %}<br />
+            {% trans "Detailed_33" %}</p>
+
+        <h2>{% trans "Detailed_34" %}</h2>
+
+        <p>{% trans "Detailed_35" %}<br />
+            {% trans "Detailed_36" %}<br />
+            {% trans "Detailed_37" %}
+        <table>
+            <tr>
+                <td> <strong>{% trans "Detailed_38" %}</strong> </td>
+                <td> <strong>{% trans "Detailed_39" %}</strong> </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_40" %}.<br />
+                    {% trans "Detailed_41" %}<br />
+                    {% trans "Detailed_42" %}<br />
+                    {% trans "Detailed_43" %}.<br />
+                    {% trans "Detailed_44" %}</td>
+                <td> {% trans "Detailed_45" %}<br />
+                    {% trans "Detailed_46" %}<br />
+                    {% trans "Detailed_47" %}<br />
+                    {% trans "Detailed_48" %}<br />
+                    {% trans "Detailed_49" %}</td>
+            </tr>
+        </table></p>
+
+        <h2>{% trans "Detailed_50" %}</h2>
+
+        <p>{% trans "Detailed_51" %}</p>
+
+        <p>{% trans "Detailed_52" %}<br />
+            {% trans "Detailed_53" %}
+        <table>
+            <tr>
+                <td> <strong>{% trans "Detailed_54" %}</strong> </td>
+                <td> <strong>{% trans "Detailed_55" %}</strong> </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_56" %}<br />
+                    {% trans "Detailed_57" %}<br />
+                    {% trans "Detailed_58" %}<br />
+                    {% trans "Detailed_59" %}<br />
+                    {% trans "Detailed_60" %}</td>
+                <td> {% trans "Detailed_61" %}<br />
+                    {% trans "Detailed_62" %}<br />
+                    {% trans "Detailed_63" %}<br />
+                    {% trans "Detailed_64" %}<br />
+                    {% trans "Detailed_65" %}</td>
+            </tr>
+        </table></p>
+
+        <h2>{% trans "Detailed_66" %}</h2>
+
+        <p>{% trans "Detailed_67" %}<br />
+            {% trans "Detailed_68" %}.
+        <table>
+            <tr>
+                <td> <strong>{% trans "Detailed_69" %}</strong> </td>
+                <td> <strong>{% trans "Detailed_70" %}</strong> </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_71" %}.<br />
+                    {% trans "Detailed_72" %}<br />
+                    {% trans "Detailed_73" %}<br />
+                    {% trans "Detailed_74" %}<br />
+                    {% trans "Detailed_75" %}</td>
+                <td> {% trans "Detailed_76" %}<br />
+                    {% trans "Detailed_77" %}<br />
+                    {% trans "Detailed_78" %}<br />
+                    {% trans "Detailed_79" %}<br />
+                    {% trans "Detailed_80" %}</td>
+            </tr>
+        </table></p>
+
+        <p>{% trans "Detailed_81" %}<br />
+            {% trans "Detailed_82" %}</p>
+
+        <p>{% trans "Detailed_83" %}</p>
+
+        <h2>{% trans "Detailed_84" %}</h2>
+
+        <table>
+            <tr>
+                <td> <strong>{% trans "Detailed_85" %}</strong> </td>
+                <td> <strong>{% trans "Detailed_86" %}</strong> </td>
+                <td> <strong>{% trans "Detailed_87" %}</strong> </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_88" %}</td>
+                <td> {% trans "Detailed_89" %}</td>
+                <td> {% trans "Detailed_90" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_91" %} </td>
+                <td> {% trans "Detailed_92" %} </td>
+                <td> {% trans "Detailed_93" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_94" %} </td>
+                <td> {% trans "Detailed_95" %} </td>
+                <td> {% trans "Detailed_96" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_97" %} </td>
+                <td> {% trans "Detailed_98" %} </td>
+                <td> {% trans "Detailed_99" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_100" %} </td>
+                <td> {% trans "Detailed_101" %} </td>
+                <td> {% trans "Detailed_102" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_103" %} </td>
+                <td> {% trans "Detailed_104" %} </td>
+                <td> {% trans "Detailed_105" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_106" %} </td>
+                <td> {% trans "Detailed_107" %} </td>
+                <td> {% trans "Detailed_108" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_109" %} </td>
+                <td> {% trans "Detailed_110" %} </td>
+                <td> {% trans "Detailed_111" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_112" %} </td>
+                <td> {% trans "Detailed_113" %} </td>
+                <td> {% trans "Detailed_114" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_115" %} </td>
+                <td> {% trans "Detailed_116" %} </td>
+                <td> {% trans "Detailed_117" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_118" %} </td>
+                <td> {% trans "Detailed_119" %} </td>
+                <td> {% trans "Detailed_120" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_121" %} </td>
+                <td> {% trans "Detailed_122" %} </td>
+                <td> {% trans "Detailed_123" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_124" %} </td>
+                <td> {% trans "Detailed_125" %} </td>
+                <td> {% trans "Detailed_126" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_127" %} </td>
+                <td> {% trans "Detailed_128" %} </td>
+                <td> {% trans "Detailed_129" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_130" %} </td>
+                <td> {% trans "Detailed_131" %} </td>
+                <td> {% trans "Detailed_132" %} </td>
+            </tr>
+            <tr>
+                <td> {% trans "Detailed_133" %} </td>
+                <td> {% trans "Detailed_134" %} </td>
+                <td> {% trans "Detailed_135" %} </td>
+            </tr>
+        </table>
+
+        <p>{% trans "Detailed_136" %}<br />
+            {% trans "Detailed_137" %}</p>
+
+        <p>{% trans "Detailed_138" %}</p>
+
+        <h2>{% trans "Detailed_139" %}</h2>
+
+        <p>{% trans "Detailed_140" %}</p>
+
+        <p>{% trans "Detailed_141" %}</p>
+
+        <p>{% trans "Detailed_142" %}<br />
+            {% trans "Detailed_143" %}</p>
+
+        <p>{% trans "Detailed_144" %}<br />
+            {% trans "Detailed_145" %}<br />
+            {% trans "Detailed_146" %}</p>
+
+        <p>{% trans "Detailed_147" %} (Disclaimer)</p>
+
+        <h2>{% trans "Detailed_148" %}</h2>
+
+        <p>{% trans "Detailed_149" %}</p>
+
+        <p>{% trans "Detailed_150" %}</p>
+
+        <h2>{% trans "Detailed_151" %}</h2>
+
+        <p>{% trans "Detailed_152" %}</p>
+
+        <p>{% trans "Detailed_153" %}</p>
+
+        <p>{% trans "Detailed_154" %}</p>
+
+        {% if not loggedIn %}
+        <p><input type="submit" value="{% trans "Register" %}" onclick="location.href='/'" /></p>
+        {% endif %}
+
+    </div>
+
+    <div class="break"></div>
+
+</div>
+</body>
+<script src="/js/main.js"></script>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "find_match_online/find_match_online",
+  "description": "Yet Another Dating Site",
+  "homepage": "http://find-match.online",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Igor Tikhonov",
+      "email": "itikhonov83@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "twig/twig": "~1.0",
+    "twig/extensions": "^1.3",
+    "facebook/php-sdk-v4": "^5.1",
+    "php-amqplib/php-amqplib": "2.5.*",
+    "predis/predis": "^1.0",
+    "phpmailer/phpmailer": "~5.2"
+  }
+}

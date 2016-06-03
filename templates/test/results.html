@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>FindMatch - Test results</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function toggleDisplay(el) {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+    <script>
+        function showAnotherDescription() {
+            var resultsCount = $('#resultsCount').val();
+            var currentResultElem = $('#currentResult');
+            var currentResult = currentResultElem.val();
+            if (resultsCount == 2) {
+                if (currentResult == 0) {
+                    $('#result0').css({'display': 'none'});
+                    $('#result1').css({'display': 'block'});
+                    currentResultElem.val(1);
+                } else if (currentResult == 1) {
+                    $('#result1').css({'display': 'none'});
+                    $('#result0').css({'display': 'block'});
+                    currentResultElem.val(0);
+                }
+            }
+
+            if (resultsCount == 4) {
+                if (currentResult == 0) {
+                    $('#result0').css({'display': 'none'});
+                    $('#result1').css({'display': 'block'});
+                    currentResultElem.val(1);
+                } else if (currentResult == 1) {
+                    $('#result1').css({'display': 'none'});
+                    $('#result2').css({'display': 'block'});
+                    currentResultElem.val(2);
+                } else if (currentResult == 2) {
+                    $('#result2').css({'display': 'none'});
+                    $('#result3').css({'display': 'block'});
+                    currentResultElem.val(3);
+                } else if (currentResult == 3) {
+                    $('#result3').css({'display': 'none'});
+                    $('#result0').css({'display': 'block'});
+                    currentResultElem.val(0);
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        html {
+            background: #999;
+        }
+
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        a img {
+            border: none;
+        }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover {
+            color: #fff;
+        }
+
+        #previewToolbar a.active {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br />
+        <br />
+
+        <h1>{% trans "Test results" %}</h1>
+
+        {% set counter = 0 %}
+        <p>{% trans "Matched personality types" %}: {{ resultsCount }}</p>
+        {% for result in results %}
+        {% if counter != 0 %}
+        <div id="result{{ counter }}" style="display: none">
+            {% else %}
+            <div id="result{{ counter }}">
+                {% endif %}
+
+                {% if result == 'ESTJ' %}
+                {% include 'types/estj.html' %}
+                {% elseif result == 'ENTJ' %}
+                {% include 'types/entj.html' %}
+                {% elseif result == 'ESFJ' %}
+                {% include 'types/esfj.html' %}
+                {% elseif result == 'ENFJ' %}
+                {% include 'types/enfj.html' %}
+                {% elseif result == 'ESTP' %}
+                {% include 'types/estp.html' %}
+                {% elseif result == 'ESFP' %}
+                {% include 'types/esfp.html' %}
+                {% elseif result == 'ENTP' %}
+                {% include 'types/entp.html' %}
+                {% elseif result == 'ENFP' %}
+                {% include 'types/enfp.html' %}
+                {% elseif result == 'ISTJ' %}
+                {% include 'types/istj.html' %}
+                {% elseif result == 'INTJ' %}
+                {% include 'types/intj.html' %}
+                {% elseif result == 'ISFJ' %}
+                {% include 'types/isfj.html' %}
+                {% elseif result == 'INFJ' %}
+                {% include 'types/infj.html' %}
+                {% elseif result == 'ISTP' %}
+                {% include 'types/istp.html' %}
+                {% elseif result == 'ISFP' %}
+                {% include 'types/isfp.html' %}
+                {% elseif result == 'INTP' %}
+                {% include 'types/intp.html' %}
+                {% elseif result == 'INFP' %}
+                {% include 'types/infp.html' %}
+                {% endif %}
+
+            </div>
+            {% set counter = counter + 1 %}
+            {% endfor %}
+            {% if testUnreg %}
+            <form action="/segyhkahgccv9xm/results" method="post">
+            {% else %}
+            <form action="/results" method="post">
+            {% endif %}
+                <input type="hidden" id="currentResult" name="currentResult" value="0">
+                <input type="hidden" id="resultsCount" name="resultsCount" value="{{ resultsCount }}">
+                <input type="hidden" id="resultsJson" name="resultsJson" value="{{ resultsJson }}">
+
+                {% if not testUnreg %}
+                <p><input type="submit" name="itsMe" value="{% trans "Yes, it's me" %}"/>
+                {% endif %}
+
+                </p>
+            </form>
+            <p>
+                {% if resultsCount > 1 %}
+                <button onclick="showAnotherDescription()">{% trans "Show another description" %}</button>
+                {% endif %}
+            </p>
+            {% if needRetake %}
+            <p>We noticed it took longer than it should to complete the test so the results may not be precise
+                enough</p>
+
+            <p>
+                {% if testUnreg %}
+                <button onclick="location.href='/test/segyhkahgccv9xm'">Retake the test</button>
+                {% else %}
+                <button onclick="location.href='/test'">Retake the test</button>
+                {% endif %}
+            </p>
+            {% endif %}
+        </div>
+        <div class="break"></div>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+</html>

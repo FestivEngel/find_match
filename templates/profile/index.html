@@ -1,0 +1,1076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Find Match - Profile</title>
+    <link href="/css/lightbox.min.css" rel="stylesheet">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.form.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
+        function toggleDisplay(el) {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+    <style type="text/css">
+        html {
+            background: #999;
+        }
+
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        a img {
+            border: none;
+        }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover {
+            color: #fff;
+        }
+
+        #previewToolbar a.active {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<script src="/js/lightbox.min.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br/>
+
+        {% if loggedIn %}
+        {% include 'includes/submenu.html' %}
+        {% endif %}
+        <br />
+
+        <h1>{% trans "Profile" %}</h1>
+        {% if member.profileFilled %}
+        <p><a href="/profile/view/{{ member.id }}" target="_blank">{% trans "View as others" %}</a></p>
+        <p><input type="submit" value="Run default search"
+                  onclick="location.href='/run/default'"/></p>
+        {% endif %}
+
+        <div id="upload-wrapper">
+            <div align="center">
+                <h3>Photo</h3>
+                <div id="output">
+                    {% if hasPhoto %}
+                    <a href="/photos/{{ photoFileName }}" data-lightbox="profile-image" data-title="{{ member.nickname }}">
+                        <img src="/photos/thumb_{{ photoFileName }}">
+                    </a>
+                    {% endif %}
+                </div>
+                <form action="/ajax/upload" method="post" enctype="multipart/form-data" id="upload_form">
+                    <div id="filename"></div>
+                    <input type="file" id="browse" name="image_file" style="display: none" onChange="handleChange();">
+                    <input type="button" value="{% trans "Browse" %}" id="fakeBrowse" onclick="handleBrowseClick();">
+
+                    <input type="submit" value="{% trans "Upload" %}">
+                    <img src="/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait">
+                </form>
+            </div>
+        </div>
+
+        <form action="javascript:void(null)" method="post" id="profileForm">
+            <input type="hidden" name="command" value="update">
+            <input type="hidden" name="livingCity" id="livingCity" value="{{ member.livingCity }}">
+            <input type="hidden" name="pLivingCity" id="pLivingCity" value="{{ defaultSearch.pLivingCity }}">
+            <input type="hidden" id="nickname" value="{{ member.nickname }}">
+            <input type="hidden" id="Du" value="{% trans "Duality" %}">
+            <input type="hidden" id="Ac" value="{% trans "Activation" %}">
+            <input type="hidden" id="Sd" value="{% trans "Semi-duality" %}">
+            <input type="hidden" id="Mg" value="{% trans "Mirage" %}">
+            <input type="hidden" id="Mr" value="{% trans "Mirror" %}">
+            <input type="hidden" id="Id" value="{% trans "Identity" %}">
+            <input type="hidden" id="Cp" value="{% trans "Cooperation" %}">
+            <input type="hidden" id="Cg" value="{% trans "Congenerity" %}">
+            <input type="hidden" id="QI" value="{% trans "Quasi-identity" %}">
+            <input type="hidden" id="Ex" value="{% trans "Extinguishment" %}">
+            <input type="hidden" id="Se" value="{% trans "Super-ego" %}">
+            <input type="hidden" id="Cf" value="{% trans "Conflict" %}">
+            <input type="hidden" id="RqPlus" value="{% trans "Requester" %}">
+            <input type="hidden" id="RqMinus" value="{% trans "Request recipient" %}">
+            <input type="hidden" id="SvPlus" value="{% trans "Supervisor" %}">
+            <input type="hidden" id="SvMinus" value="{% trans "Supervisee" %}">
+            <input type="hidden" name="pRelationsType" id="pRelationsType" value="{{ defaultSearch.pRelationsType }}">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    {{ member.nickname }}
+                    {% if member.paid %}
+                    <strong>Paid membership</strong>
+                    {% endif %}
+                </td>
+                <td>Relations</td>
+                <td>My match</td>
+            </tr>
+            <tr>
+            <tr id="deleteConfirm" style="display: none">
+                <td colspan="4">
+                    {% trans "Are you sure?" %}
+                    <br />
+                    <button id="deleteConfirmYes">{% trans "Yes" %}</button>
+                    <button id="deleteConfirmCancel">{% trans "Cancel" %}</button>
+                </td>
+            </tr>
+            <tr id="profileUpdated" style="color: blue; display: none">
+                <td colspan="4">{% trans "Success: Your profile was updated!" %}</td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" id="save" value="{% trans "Save" %}"></input>
+                <br/>
+                <button id="deactivate" {% if not member.active %} style="display: none" {% endif %}>
+                    {% trans "Deactivate profile" %}
+                </button>
+                <br/>
+                <button id="activate" {% if member.active %} style="display: none" {% endif %}>
+                    {% trans "Activate profile" %}
+                </button>
+                <br/>
+                <button id="delete">{% trans "Delete profile" %}</button>
+                <br/>
+                Share your type<br/>
+                in social networks: f vk &#8230;<br/>
+                <button id="matchingOff" {% if not member.matchingOn %} style="display: none" {% endif %}>
+                    {% trans "Turn off matching functionality" %}
+                </button>
+                <br/>
+                <button id="matchingOn" {% if member.matchingOn %} style="display: none" {% endif %}>
+                    {% trans "Turn on matching functionality" %}
+                </button>
+
+                    <input type="checkbox" id="mailing" name="mailing"{% if member.mailing %} checked{% endif %}>
+                    {% trans "Send emails" %}<br/>
+
+                </td>
+                <td style="text-align:center;"></td>
+                <td><br/>
+                    <br/>
+
+                    <div class="imageright"></div>
+                </td>
+                <td style="text-align:center;"><br/>
+                    <br/>
+
+                    <div class="imageright"></div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "I am" %}:</strong></td>
+                <td><textarea rows="4" cols="40" name="iam">{{ member.iam }}</textarea></td>
+                <td><input type="checkbox" id="newMatchesAlerts" name="newMatchesAlerts"{% if member.newMatchesAlerts %} checked{% endif %}>
+                    {% trans "Alert me about new matches" %}<br/>
+                    <input type="checkbox" id="onlyReverseMatch" name="onlyReverseMatch"{% if defaultSearch.onlyReverseMatch %} checked{% endif %}>
+                    {% trans "Include only reverse matches" %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Looking for" %}:</strong></td>
+                <td><textarea rows="4" cols="40" name="lookingFor">{{ member.lookingFor }}</textarea></td>
+                <td>{% trans "Notifications" %}
+                    <select name="alerts">
+                        <option value="1"{% if defaultSearch.alerts == 1 %} selected{% endif %}>{% trans "Never" %}</option>
+                        <option value="2"{% if defaultSearch.alerts == 2 %} selected{% endif %}>{% trans "Daily" %}</option>
+                        <option value="3"{% if defaultSearch.alerts == 3 %} selected{% endif %}>{% trans "Weekly" %}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;"><strong>{% trans "General" %}</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Gender" %}:</strong></td>
+                <td>
+                    <select name="gender">
+                        <option value="1"{% if member.gender == 1 %} selected{% endif %}>{% trans "Male" %}</option>
+                        <option value="2"{% if member.gender == 2 %} selected{% endif %}>{% trans "Female" %}</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="pGender">
+                        <option value="0"{% if defaultSearch.pGender == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        <option value="1"{% if defaultSearch.pGender == 1 %} selected{% endif %}>{% trans "Male" %}</option>
+                        <option value="2"{% if defaultSearch.pGender == 2 %} selected{% endif %}>{% trans "Female" %}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Birth" %}:</strong></td>
+                <td>
+                    <select name="bDay">
+                        {% for i in 1..31 %}
+                        <option value="{{i}}"{% if member.bDay == i %} selected{% endif %}>{{i}}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="bMonth">
+                        <option value="1"{% if member.bMonth == 1 %} selected{% endif %}>{% trans "Jan" %}</option>
+                        <option value="2"{% if member.bMonth == 2 %} selected{% endif %}>{% trans "Feb" %}</option>
+                        <option value="3"{% if member.bMonth == 3 %} selected{% endif %}>{% trans "Mar" %}</option>
+                        <option value="4"{% if member.bMonth == 4 %} selected{% endif %}>{% trans "Apr" %}</option>
+                        <option value="5"{% if member.bMonth == 5 %} selected{% endif %}>{% trans "May" %}</option>
+                        <option value="6"{% if member.bMonth == 6 %} selected{% endif %}>{% trans "Jun" %}</option>
+                        <option value="7"{% if member.bMonth == 7 %} selected{% endif %}>{% trans "Jul" %}</option>
+                        <option value="8"{% if member.bMonth == 8 %} selected{% endif %}>{% trans "Aug" %}</option>
+                        <option value="9"{% if member.bMonth == 9 %} selected{% endif %}>{% trans "Sep" %}</option>
+                        <option value="10"{% if member.bMonth == 10 %} selected{% endif %}>{% trans "Oct" %}</option>
+                        <option value="11"{% if member.bMonth == 11 %} selected{% endif %}>{% trans "Nov" %}</option>
+                        <option value="12"{% if member.bMonth == 12 %} selected{% endif %}>{% trans "Dec" %}</option>
+                    </select>
+                    <select name="bYear">
+                        {% set year1 = date() | date("Y") - 70 %}
+                        {% set year2 = date() | date("Y") - 18 %}
+                        {% for i in year2..year1 %}
+                        <option value="{{ i }}"{% if member.bYear == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>{% trans "Age" %}:
+                    <select name="pAgeFrom">
+                        <option value="0"{% if defaultSearch.pAgeFrom == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        {% for i in 18..70 %}
+                        <option value="{{ i }}"{% if defaultSearch.pAgeFrom == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    to
+                    <select name="pAgeTo">
+                        <option value="0"{% if defaultSearch.pAgeTo == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        {% for i in 18..70 %}
+                        <option value="{{ i }}"{% if defaultSearch.pAgeTo == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Living" %}:</strong></td>
+                <td>
+                    <select id="cities1"
+                            {% if member.livingCountry == 1 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if member.livingCity == 0 %} selected{% endif %}></option>
+                        {% for num, city in citiesUnitedStates %}
+                        <option value="{{ num }}"{% if member.livingCountry == 1 and member.livingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="cities2"
+                            {% if member.livingCountry == 2 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if member.livingCity == 0 %} selected{% endif %}></option>
+                        {% for num, city in citiesCanada %}
+                        <option value="{{ num }}"{% if member.livingCountry == 2 and member.livingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="cities3"
+                            {% if member.livingCountry == 3 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if member.livingCity == 0 %} selected{% endif %}></option>
+                        {% for num, city in citiesRussia %}
+                        <option value="{{ num }}"{% if member.livingCountry == 3 and member.livingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="cities4"
+                            {% if member.livingCountry == 4 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if member.livingCity == 0 %} selected{% endif %}></option>
+                        {% for num, city in citiesUkraine %}
+                        <option value="{{ num }}"{% if member.livingCountry == 4 and member.livingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="cities5"
+                            {% if member.livingCountry == 5 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if member.livingCity == 0 %} selected{% endif %}></option>
+                        {% for num, city in citiesKazakhstan %}
+                        <option value="{{ num }}"{% if member.livingCountry == 5 and member.livingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="cities6"
+                            {% if member.livingCountry == 6 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if member.livingCity == 0 %} selected{% endif %}></option>
+                        {% for num, city in citiesBelarus %}
+                        <option value="{{ num }}"{% if member.livingCountry == 6 and member.livingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+                    &nbsp;
+                    <select name="livingState" style="display: none;">
+                        <option>ON</option>
+                        <option>BC</option>
+                    </select>
+                    &nbsp;
+                    <select name="livingCountry" id="countries">
+                        <option value="0"{% if member.livingCountry == num %} selected{% endif %}></option>
+                        {% for num, livingCountry in livingCountries %}
+                        <option value="{{ num }}"{% if member.livingCountry == num %} selected{% endif %}>{% trans livingCountry %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <select id="pCities1"
+                            {% if defaultSearch.pLivingCountry == 1 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, city in citiesUnitedStates %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == 1 and defaultSearch.pLivingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="pCities2"
+                            {% if defaultSearch.pLivingCountry == 2 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, city in citiesCanada %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == 2 and defaultSearch.pLivingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="pCities3"
+                            {% if defaultSearch.pLivingCountry == 3 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, city in citiesRussia %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == 3 and defaultSearch.pLivingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="pCities4"
+                            {% if defaultSearch.pLivingCountry == 4 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, city in citiesUkraine %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == 4 and defaultSearch.pLivingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="pCities5"
+                            {% if defaultSearch.pLivingCountry == 5 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, city in citiesKazakhstan %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == 5 and defaultSearch.pLivingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+
+                    <select id="pCities6"
+                            {% if defaultSearch.pLivingCountry == 6 %}style="display: block;"{% else %} style="display: none;"{% endif %}>
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, city in citiesBelarus %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == 6 and defaultSearch.pLivingCity == num %} selected{% endif %}>{% trans city %}</option>
+                        {% endfor %}
+                    </select>
+                    &nbsp;
+                    <select name="livingState" style="display: none;">
+                        <option>ON</option>
+                        <option>BC</option>
+                    </select>
+                    &nbsp;
+                    <select name="pLivingCountry" id="pCountries">
+                        <option value="0"{% if defaultSearch.pLivingCountry == 0 %} selected{% endif %}>{% trans "all" %}</option>
+                        {% for num, livingCountry in livingCountries %}
+                        <option value="{{ num }}"{% if defaultSearch.pLivingCountry == num %} selected{% endif %}>{% trans livingCountry %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Sociotype" %}:</strong></td>
+                <td>
+                    <select name="sociotype">
+                        <option value="0"{% if member.sociotype == 0 %} selected{% endif %}></option>
+                        {% for num, socionicsCode in socionicsCodes %}
+                        <option value="{{ num }}"{% if member.sociotype == num %} selected{% endif %}>
+                            {% if socionicsCode == 'ESTJ' %}
+                            {% trans "ESTJ_title" %}
+                            {% elseif socionicsCode == 'ENTJ' %}
+                            {% trans "ENTJ_title" %}
+                            {% elseif socionicsCode == 'ESFJ' %}
+                            {% trans "ESFJ_title" %}
+                            {% elseif socionicsCode == 'ENFJ' %}
+                            {% trans "ENFJ_title" %}
+                            {% elseif socionicsCode == 'ESTP' %}
+                            {% trans "ESTP_title" %}
+                            {% elseif socionicsCode == 'ESFP' %}
+                            {% trans "ESFP_title" %}
+                            {% elseif socionicsCode == 'ENTP' %}
+                            {% trans "ENTP_title" %}
+                            {% elseif socionicsCode == 'ENFP' %}
+                            {% trans "ENFP_title" %}
+                            {% elseif socionicsCode == 'ISTJ' %}
+                            {% trans "ISTJ_title" %}
+                            {% elseif socionicsCode == 'INTJ' %}
+                            {% trans "INTJ_title" %}
+                            {% elseif socionicsCode == 'ISFJ' %}
+                            {% trans "ISFJ_title" %}
+                            {% elseif socionicsCode == 'INFJ' %}
+                            {% trans "INFJ_title" %}
+                            {% elseif socionicsCode == 'ISTP' %}
+                            {% trans "ISTP_title" %}
+                            {% elseif socionicsCode == 'ISFP' %}
+                            {% trans "ISFP_title" %}
+                            {% elseif socionicsCode == 'INTP' %}
+                            {% trans "INTP_title" %}
+                            {% elseif socionicsCode == 'INFP' %}
+                            {% trans "INFP_title" %}
+                            {% endif %}
+                        </option>
+                        {% endfor %}
+                    </select>
+                    {% if need2TakeTest %}
+                    <p><a href="/instructions">Take the test</a></p>
+                    {% else %}
+                    <p>{% trans "Share your type in social networks" %} :</p>
+                    <p><script type="text/javascript">
+                        document.write(VK.Share.button({
+                            url: '{{ url }}',
+                            title: 'Find Match Online',
+                            description: 'My personality type is {{ sociotype }}',
+                            //image: 'http://mysite.com/mypic.jpg',
+                            noparse: true
+                        }));
+                    </script></p>
+                    <p><div class="fb-share-button" data-href="http://test.find-match.online" data-layout="button_count" data-mobile-iframe="true"></div></p>
+                    <p><div class="g-plus" data-action="share"></div></p>
+
+                    {% endif %}
+                </td>
+                <td>
+                    <div id="slider"></div>
+                    <div id="relationsType">{% trans relationsType %}</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;"><strong>{% trans "Appearance" %}</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Height" %}:</strong></td>
+                <td><select name="height">
+                    <option value="0"{% if member.height == 0 %} selected{% endif %}></option>
+                    {% for i in 160..220 %}
+                    <option value="{{ i }}"{% if member.height == i %} selected{% endif %}>{{ i }}</option>
+                    {% endfor %}
+                </select>
+                    {% trans "cm" %}
+                </td>
+                <td>{% trans "from" %}
+                    <select name="pHeightFrom">
+                        <option value="any"{% if defaultSearch.pHeightFrom == 'any' %} selected{% endif %}>{% trans "any_5" %}</option>
+                        {% for i in 160..220 %}
+                        <option value="{{ i }}"{% if defaultSearch.pHeightFrom == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    {% trans "to" %}
+                    <select name="pHeightTo">
+                        <option value="any"{% if defaultSearch.pHeightTo == 'any' %} selected{% endif %}>{% trans "any_5" %}</option>
+                        {% for i in 160..220 %}
+                        <option value="{{ i }}"{% if defaultSearch.pHeightTo == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    {% trans "cm" %}
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Hair color" %}:</strong></td>
+                <td>
+                    <select name="hairColor">
+                        <option value="0"{% if member.hairColor == 0 %} selected{% endif %}></option>
+                        {% for num, hairColor in substitutions.hairColor %}
+                        <option value="{{ num }}"{% if num == member.hairColor %} selected{% endif %}>{% trans hairColor %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pHairColor[]" value="0"{% if defaultSearch.isPHairColorChecked(0) %} checked{% endif %}>{% trans "any" %}<br />
+                    {% for num, hairColor in substitutions.hairColor %}
+                    <input type="checkbox" name="pHairColor[]" value="{{ num }}"{% if defaultSearch.isPHairColorChecked(num) %} checked{% endif %}>{% trans hairColor %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Hair length" %}:</strong></td>
+                <td>
+                    <select name="hairLength">
+                        <option value="0"{% if member.hairLenght == 0 %} selected{% endif %}></option>
+                        {% for num, hairLength in substitutions.hairLength %}
+                        <option value="{{ num }}"{% if num == member.hairLength %} selected{% endif %}>{% trans hairLength %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pHairLength[]" value="0"{% if defaultSearch.isPHairLengthChecked(0) %} checked{% endif %}>{% trans "any_2" %}<br />
+                    {% for num, hairLength in substitutions.hairLength %}
+                    <input type="checkbox" name="pHairLength[]" value="{{ num }}"{% if defaultSearch.isPHairLengthChecked(num) %} checked{% endif %}>{% trans hairLength %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Hair type" %}:</strong></td>
+                <td>
+                    <select name="hairType">
+                        <option value="0"{% if member.hairType == 0%} selected{% endif %}></option>
+                        {% for num, hairType in substitutions.hairType %}
+                        <option value="{{ num }}"{% if num == member.hairType %} selected{% endif %}>{% trans hairType %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pHairType[]" value="0"{% if defaultSearch.isPHairTypeChecked(0) %} checked{% endif %}>{% trans "any" %}<br />
+                    {% for num, hairType in substitutions.hairType %}
+                    <input type="checkbox" name="pHairType[]" value="{{ num }}"{% if defaultSearch.isPHairTypeChecked(num) %} checked{% endif %}>{% trans hairType %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Eye color" %}:</strong></td>
+                <td>
+                    <select name="eyeColor">
+                        <option value="0"{% if mamber.eyeColor == 0 %} selected{% endif %}></option>
+                        {% for num, eyeColor in substitutions.eyeColor %}
+                        <option value="{{ num }}"{% if num == member.eyeColor %} selected{% endif %}>{% trans eyeColor %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pEyeColor[]" value="0"{% if defaultSearch.isPEyeColorChecked(0) %} checked{% endif %}>{% trans "any" %}<br />
+                    {% for num, eyeColor in substitutions.eyeColor %}
+                    <input type="checkbox" name="pEyeColor[]" value="{{ num }}"{% if defaultSearch.isPEyeColorChecked(num) %} checked{% endif %}>{% trans eyeColor %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Eye wear" %}:</strong></td>
+                <td>
+                    <select name="eyeWear">
+                        <option value="0"{% if member.eyeWear == 0 %} selected{% endif %}></option>
+                        {% for num, eyeWear in substitutions.eyeWear %}
+                        <option value="{{ num }}"{% if num == member.eyeWear %} selected{% endif %}>{% trans eyeWear %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pEyeWear[]" value="0"{% if defaultSearch.isPEyeWearChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, eyeWear in substitutions.eyeWear %}
+                    <input type="checkbox" name="pEyeWear[]" value="{{ num }}"{% if defaultSearch.isPEyeWearChecked(num) %} checked{% endif %}>{% trans eyeWear %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Weight" %}:</strong></td>
+                <td>
+                    <select name="weight">
+                        <option value="0"{% if member.weight == 0 %} selected{% endif %}></option>
+                        {% for i in 40..160 %}
+                        <option value="{{ i }}"{% if member.weight == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                        {% trans "kg" %}
+                </td>
+                <td>{% trans "from" %}
+                    <select name="pWeightFrom">
+                        <option value="0"{% if defaultSearch.pWeightFrom == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        {% for i in 40..160 %}
+                        <option value="{{ i }}"{% if defaultSearch.pWeightFrom == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    {% trans "to" %}
+                    <select name="pWeightTo">
+                        <option value="0"{% if defaultSearch.pWeightTo == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        {% for i in 40..160 %}
+                        <option value="{{ i }}"{% if defaultSearch.pWeightTo == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    {% trans "kg" %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "BMI" %}:</strong></td>
+                <td>
+                    <select name="BMI">
+                        <option value="0"{% if member.BMI == 0 %} selected{% endif %}></option>
+                        {% for num, BMI in substitutions.BMI %}
+                        <option value="{{ num }}"{% if num == member.BMI %} selected{% endif %}>{% trans BMI %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>{% trans "from" %}
+                    <select name="pBMIFrom">
+                        <option value="0"{% if defaultSearch.pBMIFrom == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        {% for num, BMI in substitutions.BMI %}
+                        <option value="{{ num }}"{% if num == defaultSearch.pBMIFrom %} selected{% endif %}>{% trans BMI %}</option>
+                        {% endfor %}
+                    </select>
+                    {% trans "to" %}
+                    <select name="pBMITo">
+                        <option value="0"{% if defaultSearch.pBMITo == 0 %} selected{% endif %}>{% trans "any" %}</option>
+                        {% for num, BMI in substitutions.BMI %}
+                        <option value="{{ num }}"{% if num == defaultSearch.pBMITo %} selected{% endif %}>{% trans BMI %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Body type" %}:</strong></td>
+                <td>
+                    <select name="bodyType">
+                        <option value="0"{% if member.bodyType == 0 %} selected{% endif %}></option>
+                        {% for num, bodyType in substitutions.bodyType %}
+                        <option value="{{ num }}"{% if num == member.bodyType %} selected{% endif %}>{% trans bodyType %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pBodyType[]" value="0"{% if defaultSearch.isPBodyTypeChecked(0) %} checked{% endif %}>{% trans "any_3" %}<br />
+                    {% for num, bodyType in substitutions.bodyType %}
+                    <input type="checkbox" name="pBodyType[]" value="{{ num }}"{% if defaultSearch.isPBodyTypeChecked(num) %} checked{% endif %}>{% trans bodyType %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Ethnicity" %}:</strong></td>
+                <td>
+                    <select name="ethnicity">
+                        <option value="0"{% if member.ethnicity == 0 %} selected{% endif %}></option>
+                        {% for num, ethnicity in substitutions.ethnicity %}
+                        <option value="{{ num }}"{% if num == member.ethnicity %} selected{% endif %}>{% trans ethnicity %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pEthnicity[]" value="0"{% if defaultSearch.isPEthnicityChecked(0) %} checked{% endif %}>{% trans "any_2" %}<br />
+                    {% for num, ethnicity in substitutions.ethnicity %}
+                    <input type="checkbox" name="pEthnicity[]" value="{{ num }}"{% if defaultSearch.isPEthnicityChecked(num) %} checked{% endif %}>{% trans ethnicity %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Body art" %}:</strong></td>
+                <td>
+                    <select name="bodyArt">
+                        <option value="0"{% if member.bodyArt == 0 %} selected{% endif %}></option>
+                        {% for num, bodyArt in substitutions.bodyArt %}
+                        <option value="{{ num }}"{% if num == member.bodyArt %} selected{% endif %}>{% trans bodyArt %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pBodyArt[]" value="0"{% if defaultSearch.isPBodyArtChecked(0) %} checked{% endif %}>{% trans "any" %}<br />
+                    {% for num, bodyArt in substitutions.bodyArt %}
+                    <input type="checkbox" name="pBodyArt[]" value="{{ num }}"{% if defaultSearch.isPBodyArtChecked(num) %} checked{% endif %}>{% trans bodyArt %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center;"><strong>{% trans "Lifestyle" %}:</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Drinking" %}:</strong></td>
+                <td>
+                    <select name="drinking">
+                        <option value="0"{% if member.drinking == 0 %} selected{% endif %}></option>
+                        {% for num, drinking in substitutions.drinking %}
+                        <option value="{{ num }}"{% if num == member.drinking %} selected{% endif %}>{% trans drinking %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pDrinking[]" value="0"{% if defaultSearch.isPDrinkingChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, drinking in substitutions.drinking %}
+                    <input type="checkbox" name="pDrinking[]" value="{{ num }}"{% if defaultSearch.isPDrinkingChecked(num) %} checked{% endif %}>{% trans drinking %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Smoking" %}:</strong></td>
+                <td>
+                    <select name="smoking">
+                        <option value="0"{% if member.smoking == 0 %} selected{% endif %}></option>
+                        {% for num, smoking in substitutions.smoking %}
+                        <option value="{{ num }}"{% if num == member.smoking %} selected{% endif %}>{% trans smoking %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pSmoking[]" value="0"{% if defaultSearch.isPSmokingChecked(0) %} checked{% endif %}>{% trans "any_3" %}<br />
+                    {% for num, smoking in substitutions.smoking %}
+                    <input type="checkbox" name="pSmoking[]" value="{{ num }}"{% if defaultSearch.isPSmokingChecked(num) %} checked{% endif %}>{% trans smoking %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Marital status" %}:</strong></td>
+                <td>
+                    <select name="maritalStatus">
+                        <option value="0"{% if member.maritalStatus == 0 %} selected{% endif %}></option>
+                        {% for num, maritalStatus in substitutions.maritalStatus %}
+                        <option value="{{ num }}"{% if num == member.maritalStatus %} selected{% endif %}>{% trans maritalStatus %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pMaritalStatus[]" value="0"{% if defaultSearch.isPMaritalStatusChecked(0) %} checked{% endif %}>{% trans "any_3" %}<br />
+                    {% for num, maritalStatus in substitutions.maritalStatus %}
+                    <input type="checkbox" name="pMaritalStatus[]" value="{{ num }}"{% if defaultSearch.isPMaritalStatusChecked(num) %} checked{% endif %}>{% trans maritalStatus %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Kids" %}:</strong></td>
+                <td>
+                    <select id="kids" name="kids">
+                        <option value="0"{% if member.kids == 0 %} seleceted{% endif %}></option>
+                        {% for num, kids in substitutions.kids %}
+                        <option value="{{ num }}"{% if num == member.kids %} selected{% endif %}>{% trans kids %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pKids[]" value="0"{% if defaultSearch.isPKidsChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, kids in substitutions.kids %}
+                    <input type="checkbox" name="pKids[]" value="{{ num }}"{% if defaultSearch.isPKidsChecked(num) %} checked{% endif %}>{% trans kids %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Number of kids" %}:</strong></td>
+                <td>
+                    <select id="numberOfKids" name="numberOfKids">
+                        <option value="0"{% if member.numberOfKids == 0 %} seleceted{% endif %}></option>
+                        {% for i in 1..10 %}
+                        <option value="{{ i }}"{% if member.numberOfKids == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <select name="pNumberOfKids">
+                        {% for i in 1..10 %}
+                        <option value="{{ i }}"{% if defaultSearch.pNumberOfKids == i %} selected{% endif %}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Want more kids" %}:</strong></td>
+                <td>
+                    <select name="wantMoreKids">
+                        <option value="0"{% if member.wantMoreKids == 0 %} selected{% endif %}></option>
+                        {% for num, wantMoreKids in substitutions.wantMoreKids %}
+                        <option value="{{ num }}"{% if num == member.wantMoreKids %} selected{% endif %}>{% trans wantMoreKids %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pWantMoreKids[]" value="0"{% if defaultSearch.isPWantMoreKidsChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, wantMoreKids in substitutions.wantMoreKids %}
+                    <input type="checkbox" name="pWantMoreKids[]" value="{{ num }}"{% if defaultSearch.isPWantMoreKidsChecked(num) %} checked{% endif %}>{% trans wantMoreKids %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Employment status" %}:</strong></td>
+                <td>
+                    <select name="employmentStatus">
+                        <option value="0"{% if member.employmentStatus == 0 %} selected{% endif %}></option>
+                        {% for num, employmentStatus in substitutions.employmentStatus %}
+                        <option value="{{ num }}"{% if num == member.employmentStatus %} selected{% endif %}>{% trans employmentStatus %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pEmploymentStatus[]" value="0"{% if defaultSearch.isPEmploymentStatusChecked(0) %} checked{% endif %}>{% trans "any_2" %}<br />
+                    {% for num, employmentStatus in substitutions.employmentStatus %}
+                    <input type="checkbox" name="pEmploymentStatus[]" value="{{ num }}"{% if defaultSearch.isPEmploymentStatusChecked(num) %} checked{% endif %}>{% trans employmentStatus %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Field" %}:</strong></td>
+                <td>
+                    <select name="field">
+                        <option value="0"{% if member.field == 0 %} selected{% endif %}></option>
+                        {% for num, field in substitutions.field %}
+                        <option value="{{ num }}"{% if num == member.field %} selected{% endif %}>{% trans field %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pField[]" value="0"{% if defaultSearch.isPFieldChecked(0) %} checked{% endif %}>{% trans "any_3" %}<br />
+                    {% for num, field in substitutions.field %}
+                    <input type="checkbox" name="pField[]" value="{{ num }}"{% if defaultSearch.isPFieldChecked(num) %} checked{% endif %}>{% trans field %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Annual Income" %}:</strong></td>
+                <td>
+                    <select name="annualIncome">
+                        <option value="0"{% if member.annualIncome == 0 %} selected{% endif %}></option>
+                        {% for num, annualIncome in substitutions.annualIncome %}
+                        <option value="{{ num }}"{% if num == member.annualIncome %} selected{% endif %}>{% trans annualIncome %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pAnnualIncome[]" value="0"{% if defaultSearch.isPAnnualIncomeChecked(0) %} checked{% endif %}>{% trans "any" %}<br />
+                    {% for num, annualIncome in substitutions.annualIncome %}
+                    <input type="checkbox" name="pAnnualIncome[]" value="{{ num }}"{% if defaultSearch.isPAnnualIncomeChecked(num) %} checked{% endif %}>{% trans annualIncome %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Residence" %}:</strong></td>
+                <td>
+                    <select name="residence">
+                        <option value="0"{% if member.residence == 0 %} selected{% endif %}></option>
+                        {% for num, residence in substitutions.residence %}
+                        <option value="{{ num }}"{% if num == member.residence %} selected{% endif %}>{% trans residence %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pResidence[]" value="0"{% if defaultSearch.isPResidenceChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, residence in substitutions.residence %}
+                    <input type="checkbox" name="pResidence[]" value="{{ num }}"{% if defaultSearch.isPResidenceChecked(num) %} checked{% endif %}>{% trans residence %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Religion" %}:</strong></td>
+                <td>
+                    <select name="religion">
+                        <option value="0"{% if member.religion == 0 %} selected{% endif %}></option>
+                        {% for num, religion in substitutions.religion %}
+                        <option value="{{ num }}"{% if num == member.religion %} selected{% endif %}>{% trans religion %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pReligion[]" value="0"{% if defaultSearch.isPReligionChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, religion in substitutions.religion %}
+                    <input type="checkbox" name="pReligion[]" value="{{ num }}" {% if defaultSearch.isPReligionChecked(num) %} checked{% endif %}>{% trans religion %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Education" %}:</strong></td>
+                <td>
+                    <select name="education">
+                        <option value="0"{% if member.education == 0 %} selected{% endif %}></option>
+                        {% for num, education in substitutions.education %}
+                        <option value="{{ num }}"{% if num == member.education %} selected{% endif %}>{% trans education %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <select name="pEducation">
+                        <option value="0"{% if defaultSearch.pEducation == 0 %} selected{% endif %}>{% trans "any_3" %}</option>
+                        {% for num, education in substitutions.education %}
+                        <option value="{{ num }}"{% if num == defaultSearch.pEducation %} selected{% endif %}>{% trans education %}</option>
+                        {% endfor %}
+                    </select>
+                    {% trans "or above" %}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><strong>{% trans "Willing to relocate" %}:</strong></td>
+                <td>
+                    <select name="willing2Relocate">
+                        <option value="0"{% if member.willing2Relocate == 0 %} selected{% endif %}></option>
+                        {% for num, willing2Relocate in substitutions.willing2Relocate %}
+                        <option value="{{ num }}"{% if num == member.willing2Relocate %} selected{% endif %}>{% trans willing2Relocate %}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="pWilling2Relocate[]" value="0"{% if defaultSearch.isPWilling2RelocateChecked(0) %} checked{% endif %}>{% trans "any_5" %}<br />
+                    {% for num, willing2Relocate in substitutions.willing2Relocate %}
+                    <input type="checkbox" name="pWilling2Relocate[]" value="{{ num }}" {% if defaultSearch.isPWilling2RelocateChecked(num) %} checked{% endif %}>{% trans willing2Relocate %}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+        </form>
+
+    </div>
+    <div class="break"></div>
+</div>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/profile.js"></script>
+</html>

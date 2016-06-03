@@ -1,0 +1,41 @@
+// Members collection
+db.members.createIndex({'email': 1});
+db.members.createIndex({'bDate': 1});
+db.members.createIndex({'lastLoginTs': -1});
+
+// Searches
+db.searches.createIndex({'userId': 1});
+db.searches.createIndex({'name': 1});
+db.searches.createIndex({'ts': -1});
+
+// Views
+db.views.createIndex({'userId': 1});
+db.views.createIndex({'anotherUserId': 1});
+db.views.createIndex({'ts': -1});
+
+// Favorites
+db.favorites.createIndex({'userId': 1});
+db.favorites.createIndex({'anotherUserId': 1});
+db.favorites.createIndex({'ts': -1});
+
+// Likes
+db.likes.createIndex({'userId': 1});
+db.likes.createIndex({'anotherUserId': 1});
+db.likes.createIndex({'ts': -1});
+
+// Contacts
+db.contacts.createIndex({'userId': 1});
+db.contacts.createIndex({'anotherUserId': 1});
+db.contacts.createIndex({'lastMessageTs': -1});
+
+// Messages
+db.messages.createIndex({'senderId': 1});
+db.messages.createIndex({'receiverId': 1});
+db.messages.createIndex({'ts': -1});
+
+// Restore Password
+db.restorepwd.createIndex({'userId': 1});
+db.restorepwd.createIndex({'ts': -1});
+
+// Test Results
+db.testresults.createIndex({'userId': 1});

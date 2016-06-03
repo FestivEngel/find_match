@@ -1,0 +1,32 @@
+<select id="lang">
+    <option value="en"{% if lang == 'en' %} selected{% endif %}>EN</option>
+    <option value="ru"{% if lang == 'ru' %} selected{% endif %}>RU</option>
+</select>
+
+{% if landingMode %}
+{% if not loggedIn %}
+<a href="/">{% trans "Home" %}</a> |
+{% else %}
+<a href="/thanks">{% trans "Home" %}</a> |
+{% endif %}
+{% else %}
+{% if loggedIn %}
+<a href="/profile">{% trans "Matching" %}</a> |
+{% else %}
+<a href="/search">{% trans "Matching" %}</a> |
+{% endif %}
+{% endif %}
+
+<a href="/articles">{% trans "Articles" %}</a> | <a href="/about">{% trans "About" %}</a> |
+
+{% if not landingMode %}
+{% if not loggedIn %}
+<a href="{{ registerLink }}">{% trans "Register" %}</a>
+{% endif %}
+{% endif %}
+
+{% if loggedIn %}
+<a href="/logout">{% trans "Logout" %}</a>
+{% else %}
+<a href="/login">{% trans "Login" %}</a>
+{% endif %}

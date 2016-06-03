@@ -1,0 +1,73 @@
+RewriteEngine On
+
+RewriteBase /
+
+#
+# About
+#
+RewriteRule ^(about|howitworks|whyitworks|detailed)/*$ "about.php?what=$1" [QSA] [L]
+
+#
+# Ajax
+#
+RewriteRule ^ajax/checklogin/*$ "ajax/checklogin.php"
+RewriteRule ^ajax/checkloginpwd/*$ "ajax/checkloginpwd.php"
+RewriteRule ^ajax/remindpwd/*$ "ajax/remindpwd.php"
+RewriteRule ^ajax/changelang/*$ "ajax/changelang.php"
+RewriteRule ^ajax/msgs/*$ "ajax/msgs.php"
+RewriteRule ^ajax/profile/*$ "ajax/profile.php"
+RewriteRule ^ajax/search/*$ "ajax/search.php"
+
+#
+# Articles
+#
+RewriteRule ^articles/*$ "articles.php" [QSA] [L]
+RewriteRule ^articles/(.*) "articles.php?what=$1" [QSA] [L]
+
+#
+# Auth
+#
+RewriteRule ^(vkauth|googleauth|fbauth)$ "auth.php?what=$1" [QSA] [L]
+
+#
+# Landing
+#
+RewriteRule ^index\.php$ "landing.php" [QSA] [L]
+RewriteRule ^(index|thanks)/*$ "landing.php?what=$1" [QSA] [L]
+RewriteRule ^key/([a-z0-9]{10})/*$ "landing.php?what=index&inviteToken=$1" [QSA] [L]
+
+#
+# Messages
+#
+RewriteRule ^messages/send/([a-zA-Z0-9]{24})/*$ "messages.php?what=send&anotherUserId=$1" [QSA] [L]
+RewriteRule ^messages/*$ "messages.php" [QSA] [L]
+
+#
+# Profile
+#
+RewriteRule ^profile/view/([a-zA-Z0-9]{24})/*$ "profile.php?what=view&anotherUserId=$1" [QSA] [L]
+RewriteRule ^(login|logout|register|invite|profile|analytics)/*$ "profile.php?what=$1" [QSA] [L]
+
+#
+# Relations
+#
+RewriteRule ^relations/*$ "relations.php" [QSA] [L]
+RewriteRule ^relations/(.*) "relations.php?what=$1"
+
+#
+# Search
+#
+RewriteRule ^edit/([a-zA-Z0-9]{24})/*$ "search.php?what=edit&searchId=$1" [QSA] [L]
+RewriteRule ^run/([a-zA-Z0-9]{24})/*$ "search.php?what=run&searchId=$1" [QSA] [L]
+RewriteRule ^run/default/*$ "search.php?what=run&searchId=default" [QSA] [L]
+RewriteRule ^(search|saved|new|run|save)/*$ "search.php?what=$1" [QSA] [L]
+
+#
+# Test
+#
+RewriteRule ^(instructions|test|results)/*$ "test.php?what=$1" [QSA] [L]
+
+#
+# Unsubscribe
+#
+RewriteRule ^unsubscribe/([a-zA-Z0-9]{24})/*$ "profile.php?what=unsubscribe&userId=$1" [QSA] [L]

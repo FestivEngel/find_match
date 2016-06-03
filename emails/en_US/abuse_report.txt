@@ -1,0 +1,11 @@
+[Support] Abuse report
+Reporter
+Username: %userName%
+Email: %email%
+Link to profile: https://find-match.online/profile/view/%userId%
+Complaint: %complaint%
+
+Reported profile
+Username: %anotherUserName%
+Email: %anotherUserEmail%
+Link to profile: https://find-match.online/profile/view/%anotherUserId%

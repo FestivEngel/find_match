@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Find Match - Log in</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+    <script type="text/javascript">
+        function toggleDisplay(el) {
+            var nextSibling = el;
+            do nextSibling = nextSibling.nextSibling;
+            while (nextSibling && nextSibling.nodeType != 1);
+            nextSibling.style.display = (nextSibling.style.display == 'block') ? 'none' : 'block';
+        }
+
+
+    </script>
+
+    <style type="text/css">
+        html {
+            background: #999;
+        }
+
+        body {
+            font-family: "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            background: #999;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1em;
+            margin: 0 0 20px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        a img {
+            border: none;
+        }
+
+        #navbar a {
+            color: #444;
+            text-decoration: none;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #navbar a:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        #wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #888;
+            border-top: none;
+        }
+
+        #header {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 24px;
+        }
+
+        #content {
+            width: 660px;
+            margin: 0px 0 0 20px;
+            float: left;
+            line-height: 1.5em;
+        }
+
+        .col1, .col2 {
+            width: 310px;
+            float: left;
+        }
+
+        .col1 {
+            margin-right: 40px;
+        }
+
+        #navbar {
+            width: 150px;
+            float: left;
+            line-height: 1.3em;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li ul {
+            margin-left: 10px;
+        }
+
+        #navbar ul li {
+            margin: 7px 0;
+        }
+
+        #navbar ul li.currentOpenedPage a {
+            background: #ddd;
+        }
+
+        #navbar ul li.currentOpenedPage li a {
+            background: none;
+        }
+
+        .imageleft {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .imageright {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /*
+         * Preview Toolbar
+         */
+        #previewToolbar {
+            background: #222;
+            color: #ddd;
+            height: 25px;
+            line-height: 25px;
+            width: 100%;
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-size: 11px;
+            /*	text-align: center;*/
+        }
+
+        #previewToolbar p {
+            width: 870px;
+            margin: 0 auto;
+        }
+
+        #previewToolbar a {
+            color: #eee;
+            border: none;
+            text-decoration: none;
+        }
+
+        #previewToolbar a:hover {
+            color: #fff;
+        }
+
+        #previewToolbar a.active {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">Find Match</div>
+    <div id="content">
+        {% include 'includes/menu.html' %}
+        <br/>
+
+        <table>
+            <tr>
+                <td style="text-align:right;"><strong><a href="{{ VKAuthLink }}">VK</a></strong></td>
+                <td style="text-align:right;"><strong><a href="{{ GoogleAuthLink }}">Googe</a></strong></td>
+                <td style="text-align:left;"><strong><a href="{{ FBAuthLink }}">Facebook</a></strong></td>
+            </tr>
+        </table>
+
+        <div id="passwordSent" style="color: blue; display: none;">
+            <p>{% trans "Success: Instructions have been sent!" %}</p>
+        </div>
+
+        <div id="passwordReminder" style="display: none;">
+            <form action="javascript:void(null)" method="post" id="passwordReminderForm" onsubmit="return profileLoginSendData();">
+                <table>
+                    <tr id="email2Error" style="color: red; display: none">
+                        <td colspan="2">{% trans "Error: Email is not valid!" %}</td>
+                    </tr>
+                    <tr id="userNotFound2Error" style="color: red; display: none">
+                        <td colspan="2">{% trans "Error: We could not found an account with this email!" %}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">Email:</td>
+                        <td style="text-align:left;"><input type="text" id="email2" name="email2">
+                        </td>
+                    </tr>
+                </table>
+                <p><input type="submit" name="passwordReminder" value="{% trans "Reset" %}"/></p>
+            </form>
+        </div>
+
+        <div id="login">
+            <div id="results" style="color: blue;"></div>
+            </p>
+
+            <form action="/profile" method="post" id="loginForm" onsubmit="return profileLoginCheckForm();">
+                <table>
+                    <tr id="emailError" style="color: red; display: none">
+                        <td colspan="2">{% trans "Error: Email is not valid!" %}</td>
+                    </tr>
+                    <tr id="userNotFoundError" style="color: red; display: none">
+                        <td colspan="2">{% trans "Error: An account with entered credentials doesn't exist!" %}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">Email:</td>
+                        <td style="text-align:left;"><input type="text" id="email" name="email">
+                        </td>
+                    </tr>
+                    <tr id="passwordError" style="color: red; display: none">
+                        <td colspan="2">{% trans "Error: please check that you've entered your password!" %}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">{% trans "Password" %}:</td>
+                        <td style="text-align:left;"><input type="password" id="password" name="password">
+                        </td>
+                    </tr>
+                </table>
+                <p><input type="submit" name="login" value="{% trans "Log in" %}"/></p>
+            </form>
+            <p style="text-align:center;"><a href="#" id="passwordReminderLink">[{% trans "Forgot password" %}]</a></p>
+        </div>
+    </div>
+    <div class="break"></div>
+</div>
+</body>
+<script src="/js/main.js"></script>
+<script>
+    $('#email2').on('input', function () {
+        profileLoginRemoveErrorNotification('email2Error');
+        profileLoginRemoveErrorNotification('userNotFound2Error');
+    });
+
+    $('#email').on('input', function() {
+        profileLoginRemoveErrorNotification('emailError');
+        profileLoginRemoveErrorNotification('userNotFoundError');
+    });
+
+    $('#password').on('input', function() {
+        profileLoginRemoveErrorNotification('passwordError');
+        profileLoginRemoveErrorNotification('userNotFoundError');
+    });
+
+    $('#passwordReminderLink').on('click', function() {
+        $('#email2').val($('#email').val());
+        $('#login').css({'display': 'none'});
+        $('#passwordReminder').css({'display': 'block'});
+
+        return false;
+    });
+</script>
+</html>

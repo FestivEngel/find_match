@@ -1,0 +1,11 @@
+[Support] Жалоба
+Отправитель
+Пользователь: %userName%
+Email: %email%
+Профиль: https://find-match.online/profile/view/%userId%
+Жалоба: %complaint%
+
+Виновник
+Пользователь: %anotherUserName%
+Email: %anotherUserEmail%
+Профиль: https://find-match.online/profile/view/%anotherUserId%
